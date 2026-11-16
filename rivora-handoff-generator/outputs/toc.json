@@ -1,0 +1,212 @@
+[
+  {
+    "text": "1. Document Control and Version History",
+    "id": "h1_1",
+    "label": "1.",
+    "title": "Document Control and Version History"
+  },
+  {
+    "text": "2. Executive Summary",
+    "id": "h1_2",
+    "label": "2.",
+    "title": "Executive Summary"
+  },
+  {
+    "text": "3. Project Overview",
+    "id": "h1_3",
+    "label": "3.",
+    "title": "Project Overview"
+  },
+  {
+    "text": "4. Business Context",
+    "id": "h1_4",
+    "label": "4.",
+    "title": "Business Context"
+  },
+  {
+    "text": "5. Project Objectives",
+    "id": "h1_5",
+    "label": "5.",
+    "title": "Project Objectives"
+  },
+  {
+    "text": "6. Scope and Out-of-Scope Requirements",
+    "id": "h1_6",
+    "label": "6.",
+    "title": "Scope and Out-of-Scope Requirements"
+  },
+  {
+    "text": "7. Target Audience",
+    "id": "h1_7",
+    "label": "7.",
+    "title": "Target Audience"
+  },
+  {
+    "text": "8. Website Content Inventory",
+    "id": "h1_8",
+    "label": "8.",
+    "title": "Website Content Inventory"
+  },
+  {
+    "text": "9. Website Information Architecture",
+    "id": "h1_9",
+    "label": "9.",
+    "title": "Website Information Architecture"
+  },
+  {
+    "text": "10. Brand Identity",
+    "id": "h1_10",
+    "label": "10.",
+    "title": "Brand Identity"
+  },
+  {
+    "text": "11. Design System",
+    "id": "h1_11",
+    "label": "11.",
+    "title": "Design System"
+  },
+  {
+    "text": "12. UI/UX Requirements",
+    "id": "h1_12",
+    "label": "12.",
+    "title": "UI/UX Requirements"
+  },
+  {
+    "text": "13. Interaction Specifications",
+    "id": "h1_13",
+    "label": "13.",
+    "title": "Interaction Specifications"
+  },
+  {
+    "text": "14. Functional Requirements",
+    "id": "h1_14",
+    "label": "14.",
+    "title": "Functional Requirements"
+  },
+  {
+    "text": "15. Non-Functional Requirements",
+    "id": "h1_15",
+    "label": "15.",
+    "title": "Non-Functional Requirements"
+  },
+  {
+    "text": "16. Technical Stack",
+    "id": "h1_16",
+    "label": "16.",
+    "title": "Technical Stack"
+  },
+  {
+    "text": "17. System Architecture",
+    "id": "h1_17",
+    "label": "17.",
+    "title": "System Architecture"
+  },
+  {
+    "text": "18. Source-Code Structure",
+    "id": "h1_18",
+    "label": "18.",
+    "title": "Source-Code Structure"
+  },
+  {
+    "text": "19. Responsive Design Strategy",
+    "id": "h1_19",
+    "label": "19.",
+    "title": "Responsive Design Strategy"
+  },
+  {
+    "text": "20. Image and Asset Management",
+    "id": "h1_20",
+    "label": "20.",
+    "title": "Image and Asset Management"
+  },
+  {
+    "text": "21. SEO Strategy",
+    "id": "h1_21",
+    "label": "21.",
+    "title": "SEO Strategy"
+  },
+  {
+    "text": "22. Performance Strategy",
+    "id": "h1_22",
+    "label": "22.",
+    "title": "Performance Strategy"
+  },
+  {
+    "text": "23. Accessibility Requirements",
+    "id": "h1_23",
+    "label": "23.",
+    "title": "Accessibility Requirements"
+  },
+  {
+    "text": "24. Security Requirements",
+    "id": "h1_24",
+    "label": "24.",
+    "title": "Security Requirements"
+  },
+  {
+    "text": "25. Contact Form Architecture",
+    "id": "h1_25",
+    "label": "25.",
+    "title": "Contact Form Architecture"
+  },
+  {
+    "text": "26. Hosting and Deployment",
+    "id": "h1_26",
+    "label": "26.",
+    "title": "Hosting and Deployment"
+  },
+  {
+    "text": "27. Testing Strategy",
+    "id": "h1_27",
+    "label": "27.",
+    "title": "Testing Strategy"
+  },
+  {
+    "text": "28. Coding Agent Execution Plan",
+    "id": "h1_28",
+    "label": "28.",
+    "title": "Coding Agent Execution Plan"
+  },
+  {
+    "text": "29. Acceptance Criteria",
+    "id": "h1_29",
+    "label": "29.",
+    "title": "Acceptance Criteria"
+  },
+  {
+    "text": "30. Risks and Dependencies",
+    "id": "h1_30",
+    "label": "30.",
+    "title": "Risks and Dependencies"
+  },
+  {
+    "text": "31. Missing Information and Assumptions",
+    "id": "h1_31",
+    "label": "31.",
+    "title": "Missing Information and Assumptions"
+  },
+  {
+    "text": "32. Final Handover Checklist",
+    "id": "h1_32",
+    "label": "32.",
+    "title": "Final Handover Checklist"
+  },
+  {
+    "text": "33. Project URL and Environment Register",
+    "id": "h1_33",
+    "label": "33.",
+    "title": "Project URL and Environment Register"
+  },
+  {
+    "text": "Appendix A — Glossary of Identifiers and Acronyms",
+    "id": "h1_34",
+    "label": "Appendix A",
+    "title": "Glossary of Identifiers and Acronyms"
+  },
+  {
+    "text": "Appendix B — Source File Inventory",
+    "id": "h1_35",
+    "label": "Appendix B",
+    "title": "Source File Inventory"
+  }
+]

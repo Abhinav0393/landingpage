@@ -1,0 +1,581 @@
+{
+ "header": {
+  "nav": [
+   [
+    "PILLARS",
+    "#pillars"
+   ],
+   [
+    "SERVICES",
+    "#services"
+   ],
+   [
+    "SEARCH DEPTH",
+    "#search-depth"
+   ],
+   [
+    "PROCESS",
+    "#process"
+   ],
+   [
+    "ACQUISITIONS",
+    "#expertise"
+   ],
+   [
+    "REVIEWS",
+    "#reviews"
+   ],
+   [
+    "FAQ",
+    "#faq"
+   ]
+  ],
+  "cta": [
+   [
+    "CONTACT",
+    "#contact",
+    ""
+   ],
+   [
+    "",
+    "#contact",
+    "Account"
+   ]
+  ],
+  "brand": [
+   "RIVORA",
+   "ADVOCATES & ASSOCIATES"
+  ]
+ },
+ "hero": {
+  "img_alt": "Cadastral map, legal volumes, balance of justice and farmland",
+  "badge": "LEGAL SERVICES",
+  "h1": "End-to-end land & property title verification.",
+  "p": "Comprehensive title scrutiny across plotted developments, agricultural land, and institutional acreage. Senior Advocate RK.V & Associates personally scrutinize unbroken link chains from primary revenue records (Pahanis), cross-verify Sub-Registrar books, and deliver certified written legal opinions before you purchase or develop.",
+  "buttons": [
+   [
+    "Request a consultation",
+    "#contact"
+   ],
+   [
+    "Our practice areas",
+    "#services"
+   ]
+  ],
+  "meta": [
+   [
+    "Human Scrutiny",
+    "Advocate RK.V & Team"
+   ],
+   [
+    "Field Verification",
+    "Revenue Archives & Taluk"
+   ],
+   [
+    "Certified Deliverable",
+    "Signed Written Legal Opinion"
+   ]
+  ],
+  "img_src": "https://lh3.googleusercontent.com/aida-public/AB6AXuARYtNl0lwyB5xagrgtWgt4iOfE4kSgv-ebPFXijD38yVdJnoaI882_ogKmyVO4KWEsGB8VUim5aoJ5QEHUw9WlkimMSM_Ue6dgeXJd9zWB6Gv7djwtMuaBqsM5AKURKeLSzegsWvBRxnrfLPkOVA-MTV4UQ7Qw5gzdeVRnEXgWe0X8ttF68SRVz03rlz-3QJuBm39Ghq9kHBEOkg41mB0Ss11mWeq2ZIF7_lDJUIZh5b-08Uf3kBQ_wA"
+ },
+ "marquee": [
+  "LAND INTELLIGENCE",
+  "TITLE VERIFICATION",
+  "PROPERTY DUE DILIGENCE",
+  "LEGAL RESEARCH",
+  "DOCUMENT SCRUTINY",
+  "OWNERSHIP HISTORY",
+  "LEGAL OPINIONS"
+ ],
+ "pillars": {
+  "kicker": "Core Scrutiny Pillars // Property Assurance",
+  "sub": "Thorough advocate-led examination protocols",
+  "cards": [
+   {
+    "kicker": "01 / Origin",
+    "title": "Genesis & Root Title",
+    "body": "Exhaustive root examination through historical Pahanis, record of rights (ROR), mutation ledgers, and original sovereign grants."
+   },
+   {
+    "kicker": "02 / Regulatory",
+    "title": "Prohibited & 22-A Scrutiny",
+    "body": "Screening against Section 22-A prohibited registers, government assigned lands, Wakf/Endowment listings, and master plan zoning buffers."
+   },
+   {
+    "kicker": "03 / Judicial",
+    "title": "Litigation & Court Searches",
+    "body": "In-depth docket searches across civil jurisdictions, high courts, and revenue appellate authorities for adverse claims and lis pendens."
+   },
+   {
+    "kicker": "04 / Evidentiary",
+    "title": "Reasoned Written Opinion",
+    "body": "Definitive legal certification, detailed defect remediation roadmaps, and actionable risk matrices under advocate signature."
+   }
+  ]
+ },
+ "services": {
+  "kicker": "Legal Practice Architecture",
+  "h2": "Six practice areas, one standard of care",
+  "p": "Every engagement is personally conducted by our senior advocates, safeguarding families, institutional buyers, and property developers.",
+  "counter": "01 / 06",
+  "arrows": [
+   "Previous Slide",
+   "Next Slide"
+  ],
+  "items": [
+   {
+    "tab_kicker": "01 // TITLE",
+    "tab_name": "Due Diligence",
+    "badge": "PRACTICE 01 // CORE DUE DILIGENCE",
+    "h3": "End-to-end title due diligence",
+    "p": "Complete chain-of-title examination from root Pahanis to registered deeds, Section 22-A prohibited checks, and certified title opinions.",
+    "chips": [
+     "Root Pahanis & ROR",
+     "Section 22-A Ledger",
+     "Certified Title Opinion"
+    ],
+    "footer": "Advocate-Signed Legal Report",
+    "cta": "Initiate Scrutiny",
+    "cta_href": "#contact",
+    "img_alt": "Farmland cadastral survey",
+    "img_src": "https://lh3.googleusercontent.com/aida/ALJJyrBHp2ougT3M6IweJLGyNVkC6KTKG04yNSLfjrNaG72An7Cr916B0te9sb2-zddCT84Jp8-Zo9yiBGPe6yGuDrrTwN8yGPRAQ4RRfs0zuNciykM8MOtulupkPPq8reen5kBY7IUDqMpu04WMcxTKcoJ4g9mr6NJKSyrpMahfl6pvnflTk97JEpzStL60nVofD_vnXAJEe6NvwqM7XzymIxwP33rSdQw03l5Do5WGpyf5"
+   },
+   {
+    "tab_kicker": "02 // ADVISORY",
+    "tab_name": "Pre-Litigation",
+    "badge": "PRACTICE 02 // PREEMPTIVE DEFENSE",
+    "h3": "Pre-litigation opinions",
+    "p": "Preemptive legal risk advisory, boundary validation, and dispute mitigation prior to financial commitment.",
+    "chips": [
+     "Adverse Claim Assessment",
+     "Boundary Scrutiny",
+     "Dispute Insulation"
+    ],
+    "footer": "Advisory & Risk Matrix",
+    "cta": "Request Legal Opinion",
+    "cta_href": "#contact",
+    "img_alt": "Law books desk",
+    "img_src": "https://lh3.googleusercontent.com/aida/ALJJyrDpQ65hni3oCwLG_1Q3x78xPOvpB-ZzT6N45l0HlYt-Xq4ENSMjoZu7JJDkOyyzKzDqtXF_0EqGTxyAitLIKj0QjiM3fLzNPXnGSCZ8Y4x1mLTDhpugv9skS6x6CJO9qslqtVNkGiPMg8CLlhFKxTw02cFCAdCUtH9rjfi2OpxTrWWXbtuGjJJIH-BuYY3_SXESphCdEUl-lWlBSZ9LjygjPG7On-a_wMRd8Bqnz4gWFg"
+   },
+   {
+    "tab_kicker": "03 // DEEDS",
+    "tab_name": "Documentation",
+    "badge": "PRACTICE 03 // CONVEYANCING",
+    "h3": "Property documentation",
+    "p": "Vetted drafting and execution of absolute sale deeds, partition deeds, settlement deeds, and registration filings.",
+    "chips": [
+     "Sale Deeds",
+     "Family Partition Instruments",
+     "Sub-Registrar Execution"
+    ],
+    "footer": "Vetted Executed Instruments",
+    "cta": "Schedule Drafting",
+    "cta_href": "#contact",
+    "img_alt": "Conveyance deeds",
+    "img_src": "https://lh3.googleusercontent.com/aida/ALJJyrAsPs1EFLBHSpaVgcpDIfHH6uzsq_3gtR7ef2kJmQG5zsqk10gqLeZim64aKeOqnmH7VuPrEAphLyUeN3SI61ym3tfdjfN0fVeSqFzd_nAwp8YjnIKJsTcJs_yAko8m2MDXiLsggdaU7GxtIZ0g-1aJGnk7YhlPqmE3GLGf1468QKMoUcP5H-1MD0vi62C0gw-hqJEOAMi3Nw3LsXoVWjTcQbWNM38q6GdyntI11ZL3yg"
+   },
+   {
+    "tab_kicker": "04 // CORPORATE",
+    "tab_name": "Institutional",
+    "badge": "PRACTICE 04 // CORPORATE LAND HOLDINGS",
+    "h3": "Corporate legal advisory",
+    "p": "Institutional due diligence for REITs, multi-acre corporate acquisitions, mergers, and project financing.",
+    "chips": [
+     "REIT Asset Scrutiny",
+     "Banking Project Finance",
+     "Statutory Ceilings"
+    ],
+    "footer": "Corporate Due Diligence Dossier",
+    "cta": "Engage Advisory Counsel",
+    "cta_href": "#contact",
+    "img_alt": "Corporate advisory boardroom",
+    "img_src": "https://lh3.googleusercontent.com/aida/ALJJyrC62eWiFpeVBkhpWznlrsgwNZRTUSCwMWyqwxXACr5mDjGtjA9JdRiBnceD-9oXuUm-sdfsBXc4FEi2i8QwfrsqeauGbI4rEAGE3CNzJKZhW9p1USbtkPBOHlv3cYYxgv_HVZX2p3cg8WMtYLG45IUttaS1MzHaoEA5FXFM-mSz94lPmGtwLDg2Qr-CUkhLsXuGOV2z_wte843sjTZdpsNDZrOCoNB-jMQ8gQrDBtOV"
+   },
+   {
+    "tab_kicker": "05 // CONTRACTS",
+    "tab_name": "Contract Drafting",
+    "badge": "PRACTICE 05 // COMMERCIAL COVENANTS",
+    "h3": "Contract drafting",
+    "p": "Bespoke Joint Development Agreements (JDA), development rights transfers, and commercial EPC covenants.",
+    "chips": [
+     "JDA & GPA Agreements",
+     "Long-term Lease Deeds",
+     "EPC Safeguards"
+    ],
+    "footer": "Customized Transaction Contracts",
+    "cta": "Structure Covenants",
+    "cta_href": "#contact",
+    "img_alt": "Contract drafting desk",
+    "img_src": "https://lh3.googleusercontent.com/aida/ALJJyrCcG4XD2CnZtHnKxq2F5qOKxhs8AukT4MPfHXod713kRiOwk_USwQB7XyEmFgo54wMHOZy44e9Zz_8bp6fbLfGvBzBThkEjmqG57BnFhWW5XY9k7XDjO_YmTdxCPyhkufLS_MOkSPyuHNoqB79wP_dLv1m852DiL5U6Lcr9lp2XtREN1coVUJ8ocjXhU5HnfcwFo664u9MzuPY9lQstAHm2-GHHivTjqTvmmUkIGpzJCw"
+   },
+   {
+    "tab_kicker": "06 // DEFENSE",
+    "tab_name": "Litigation Support",
+    "badge": "PRACTICE 06 // FORENSIC DEFENSE",
+    "h3": "Litigation support",
+    "p": "Historical forensic research, revenue and civil court defense, and title defect rectification strategies.",
+    "chips": [
+     "Revenue Appellate Defense",
+     "Defect Rectification Deeds",
+     "Lis Pendens Resolution"
+    ],
+    "footer": "Advocate Courtroom Strategy",
+    "cta": "Consult Defense Counsel",
+    "cta_href": "#contact",
+    "img_alt": "Judicial courtroom appellate legal chamber",
+    "img_src": "https://lh3.googleusercontent.com/aida/ALJJyrCWKH5I4I84Q-itnVFi8AtmQzydrC5S-Z7i68xhkRPQZpnfn22-jaVugrLK4TviVQw7R7OK-hHnfi8vSJNICNK_6zuhQzz3SFmTwUpinA9kr8b7YfsTqYOgPVKhWU3WP4IUnK-Q00L8fM2DCP3Bjrd_TbXG7v9SnhTzpIcJ-dgLMMcerMSbSCdH3Vxv7McfjtahmQmgiS2n6ez5HNJ3LOkbZWsYPTOiw0HJ3CN5oCsfpA"
+   }
+  ]
+ },
+ "search": {
+  "kicker": "Investigation Horizons",
+  "h2": "How far back we search",
+  "p": "Land rights are generational. We tailor historical scrutiny to the specific legal risks of each transaction class.",
+  "cards": [
+   {
+    "ribbon": "",
+    "number": "15",
+    "label": "Years Horizon",
+    "h3": "Focused search",
+    "p": "Designed for standard residential resale properties in developed gated communities with clear prior institutional approvals.",
+    "bullets": [
+     "Registered link documents",
+     "Encumbrance search (EC)",
+     "Recent property tax receipts",
+     "Approved layout plan verification"
+    ],
+    "suit_label": "Suitability",
+    "suit_value": "Apartments & Plotted Resales"
+   },
+   {
+    "ribbon": "Statutory Standard Benchmark",
+    "number": "30",
+    "label": "Recommended",
+    "h3": "General standard",
+    "p": "The recommended legal standard under property law. Verifies an unbroken 30-year chain of title, ensuring root title validity and eliminating undisclosed claims.",
+    "bullets": [
+     "Unbroken title sequence",
+     "Revenue records & Pahani ledger",
+     "Section 22-A prohibited property scan",
+     "Civil court index search",
+     "Sub-Registrar books inspection"
+    ],
+    "suit_label": "Legal Protection",
+    "suit_value": "Institutional Purchases & Major Investments"
+   },
+   {
+    "ribbon": "",
+    "number": "60",
+    "label": "Years Horizon",
+    "h3": "Extended search",
+    "p": "Exhaustive historical forensic scrutiny for ancestral agricultural tracts, large parcels, greenfield conversions, and high-value sovereign assets.",
+    "bullets": [
+     "Inam / Jagir / Grant root validation",
+     "Khasra Pahani genealogy verification",
+     "Statutory land ceiling audits",
+     "Wakf, Endowments & Govt. land records",
+     "Survey boundary & Tippani reconciliation"
+    ],
+    "suit_label": "Suitability",
+    "suit_value": "Agricultural Land, Large Parcels & JVs"
+   }
+  ]
+ },
+ "process": {
+  "kicker": "Protocol & Execution",
+  "h2": "How our advocates examine your property",
+  "p": "A methodical, five-stage legal scrutiny pipeline handled directly by senior practitioners.",
+  "stages": [
+   {
+    "stage": "STAGE 01",
+    "icon": "assignment",
+    "h3": "Consultation",
+    "p": "Direct discussion with counsel: parcel identifiers, survey numbers, transaction structure, and verification objectives.",
+    "deliv_label": "Deliverable",
+    "deliv": "Scope Document"
+   },
+   {
+    "stage": "STAGE 02",
+    "icon": "folder_open",
+    "h3": "Documents",
+    "p": "Physical collation of certified link deeds, historical Pahanis, ECs, village maps, and layout approvals from taluk archives.",
+    "deliv_label": "Deliverable",
+    "deliv": "Dossier Collation"
+   },
+   {
+    "stage": "STAGE 03",
+    "icon": "manage_search",
+    "h3": "Scrutiny",
+    "p": "In-depth legal examination, Section 22-A prohibited register inspection, civil court indices, and master plan zoning checks.",
+    "deliv_label": "Deliverable",
+    "deliv": "Legal Analysis"
+   },
+   {
+    "stage": "STAGE 04",
+    "icon": "gavel",
+    "h3": "Written Opinion",
+    "p": "Delivery of comprehensive, reasoned written title scrutiny report and risk matrix bearing counsel's seal and signature.",
+    "deliv_label": "Deliverable",
+    "deliv": "Reasoned Opinion"
+   },
+   {
+    "stage": "STAGE 05",
+    "icon": "verified",
+    "h3": "Transaction Support",
+    "p": "Practical advice on defect remediation, drafting protective deed covenants, Sub-Registrar guidance, and closing.",
+    "deliv_label": "Deliverable",
+    "deliv": "Closing Support"
+   }
+  ]
+ },
+ "expertise": {
+  "kicker": "Experienced Legal Counsel",
+  "h2": "Trusted for high-stakes corporate acquisitions",
+  "p": "Advocate RK.V and our senior legal team act as independent property counsel for institutional funds, developers, and corporate entities acquiring significant acreage across Southern India.",
+  "points": [
+   {
+    "icon": "account_tree",
+    "h4": "Physical inspection of complex land records",
+    "p": "Reconciling revenue department mutation ledgers, village survey maps, and registration department book extracts into a coherent evidentiary chain."
+   },
+   {
+    "icon": "rule",
+    "h4": "Strict adherence to land ceiling & master-plan regulations",
+    "p": "Verifying agricultural land ceilings, urban development authority land-use master plans, and environmental buffer covenants."
+   },
+   {
+    "icon": "security",
+    "h4": "Uncompromising fiduciary independence",
+    "p": "Independent opinions uninfluenced by broker mandates, designed solely to insulate purchaser liability and protect your investment."
+   }
+  ],
+  "checklist": {
+   "kicker": "Counsel Verification Checklist",
+   "title": "Legal Due Diligence Scrutiny Points",
+   "badge": "Advocate Practice",
+   "rows": [
+    [
+     "Revenue Mutation Analysis",
+     "VERIFIED / UNBROKEN"
+    ],
+    [
+     "Section 22-A Prohibited Ledger",
+     "NEGATIVE / CLEAR"
+    ],
+    [
+     "Tippani & FMB Field Measurement",
+     "CONGRUENT WITH DEED"
+    ],
+    [
+     "High Court / Civil Court Docket Scan",
+     "NO LIS PENDENS"
+    ],
+    [
+     "Master Plan Land Zone Status",
+     "PERMITTED ZONE"
+    ]
+   ],
+   "assure_label": "Counsel Oversight Assurance",
+   "assure": "Every written report is authored by certified legal counsel, backed by certified extract copies from the relevant taluk and registrar offices."
+  }
+ },
+ "reviews": {
+  "kicker": "Testimonials & Credentials",
+  "h2": "Client reviews",
+  "p": "What property owners, investors, and developers say about working with RK.V and the RIVORA team.",
+  "cards": [
+   {
+    "quote": "\"RIVORA's scrutiny of a 42-acre parcel in Rangareddy identified an undisclosed 1984 partition flaw that two previous law firms overlooked. Saved our fund over ₹18 Crores in dispute liability.\"",
+    "name": "Anand V. Rao",
+    "role": "Managing Director, Horizon Realty Funds",
+    "dup": false,
+    "badge": ""
+   },
+   {
+    "quote": "\"Their rigorous check against the Section 22-A prohibited property registry is the fastest and most dependable in the state. RK.V and his team operate with surgical precision.\"",
+    "name": "Siddharth Reddy",
+    "role": "Partner, Prime Infraventures",
+    "dup": false,
+    "badge": ""
+   },
+   {
+    "quote": "\"As an NRI acquiring ancestral land, navigating Telangana's Dharani portal and manual archives seemed daunting. RIVORA tracked 50 years of Pahani mutation entries within ten days.\"",
+    "name": "Deepa K. Murthy",
+    "role": "Family Trust Trustee, Singapore",
+    "dup": false,
+    "badge": ""
+   },
+   {
+    "quote": "\"Their written opinions read like judicial rulings—clear, objective, and backed by certified revenue extracts. Our banking partners approved our project finance purely on their report.\"",
+    "name": "Rajeshwar G.",
+    "role": "Chief Operating Officer, Apex Logistics Parks",
+    "dup": false,
+    "badge": ""
+   },
+   {
+    "quote": "\"Uncompromised independence is their signature. They don't give opinions to rubber-stamp sales; they defend your investment capital with uncompromising integrity. The only title verification team we trust.\"",
+    "name": "Kavitha Nambiar",
+    "role": "Senior Legal Counsel, Equitas Asset Management",
+    "dup": false,
+    "badge": "VERIFIED"
+   },
+   {
+    "quote": "\"RIVORA's scrutiny of a 42-acre parcel in Rangareddy identified an undisclosed 1984 partition flaw that two previous law firms overlooked. Saved our fund over ₹18 Crores in dispute liability.\"",
+    "name": "Anand V. Rao",
+    "role": "Managing Director, Horizon Realty Funds",
+    "dup": true,
+    "badge": ""
+   },
+   {
+    "quote": "\"Their rigorous check against the Section 22-A prohibited property registry is the fastest and most dependable in the state. RK.V and his team operate with surgical precision.\"",
+    "name": "Siddharth Reddy",
+    "role": "Partner, Prime Infraventures",
+    "dup": true,
+    "badge": ""
+   },
+   {
+    "quote": "\"As an NRI acquiring ancestral land, navigating Telangana's Dharani portal and manual archives seemed daunting. RIVORA tracked 50 years of Pahani mutation entries within ten days.\"",
+    "name": "Deepa K. Murthy",
+    "role": "Family Trust Trustee, Singapore",
+    "dup": true,
+    "badge": ""
+   }
+  ]
+ },
+ "faq": {
+  "badge": "FAQ // LEGAL KNOWLEDGE BASE",
+  "h2": "Frequently asked questions",
+  "p": "Essential legal insights into property scrutiny, statutory risks, and title defense across South India.",
+  "cta": "Ask Us a Question",
+  "assure": "All inquiries reviewed directly by Advocate RK.V & Associates",
+  "items": [
+   {
+    "n": "01",
+    "q": "What documents are required for a property title verification?",
+    "a": "Essential documents include the original link documents tracing ownership for at least 30 years, current and historical Pahanis (ROR), Encumbrance Certificates (EC Form 15 and Form 16), revenue mutation registers, village layout or Tippani survey maps, tax assessment receipts, and layout approvals from the statutory planning authority."
+   },
+   {
+    "n": "02",
+    "q": "What is Section 22-A and why is it critical in land transactions?",
+    "a": "Section 22-A of the Registration Act mandates a prohibition list of properties that cannot be registered. This includes government assigned lands, Wakf properties, Endowments land, acquired lands, and parcels under litigation or ceiling surplus. A property notified under Section 22-A cannot be transferred, and any transaction is void ab initio."
+   },
+   {
+    "n": "03",
+    "q": "How long does an end-to-end title verification report take?",
+    "a": "A standard 30-year verification for urban plotted properties typically takes 5 to 7 business days once certified copies are collated. Complex agricultural acquisitions, large commercial tracts, or 60-year extended searches involving revenue archives and field inspections require 10 to 14 business days."
+   },
+   {
+    "n": "04",
+    "q": "What is the difference between a 15-year, 30-year, and 60-year search?",
+    "a": "A 15-year search verifies recent transactions for resale apartments with prior verified root titles. A 30-year search is the statutory benchmark that verifies continuous, uninterrupted ownership and eliminates claims under limitation laws. A 60-year search traces ancestral land back to original Inam or grant records, critical for agricultural conversions and institutional land banking."
+   },
+   {
+    "n": "05",
+    "q": "Why are Pahanis (ROR) essential alongside registered sale deeds?",
+    "a": "A registered sale deed confirms the conveyance transaction, but Pahanis (Record of Rights) confirm sovereign revenue recognition, actual possession, nature of cultivation, tenancy rights, and mutation entries. Discrepancies between registered deeds and Pahanis are the primary genesis of title disputes."
+   },
+   {
+    "n": "06",
+    "q": "Can RIVORA investigate pending litigation across civil and revenue courts?",
+    "a": "Yes. We cross-examine jurisdictional civil courts, high courts, and revenue appellate bodies (Tahsildar, RDO, Joint Collector) for pending suits, injunctions, partition claims, or lis pendens affecting the subject property."
+   }
+  ]
+ },
+ "contact": {
+  "badge": "Personal Legal Counsel // Direct Access",
+  "h2": "Request a consultation",
+  "p": "Speak directly with Senior Advocate RK.V and our property law associates to discuss your survey numbers, documentation state, and title verification timeline.",
+  "card_kicker": "Principal Legal Counsel",
+  "card_h3": "Advocate RK.V & Associates",
+  "card_sub": "Practicing Counsel & Title Examination Specialists",
+  "status": "Consultations Active",
+  "line_label": "Direct Counsel Line & Dossier Desk",
+  "phone": "8099888851",
+  "line_sub": "Direct line to chambers for prospective purchasers and developers",
+  "buttons": [
+   [
+    "Call Chambers",
+    "tel:8099888851"
+   ],
+   [
+    "Copy Number",
+    "button: copyContactNumber"
+   ],
+   [
+    "WhatsApp Desk",
+    "https://wa.me/918099888851"
+   ]
+  ],
+  "toast": "Telephone Number Copied to Clipboard",
+  "juris_label": "Service Jurisdictions:",
+  "juris": "Telangana | Andhra Pradesh | New Delhi",
+  "assure1": "Senior Advocate Direct Scrutiny",
+  "privilege": "All consultations, deed abstracts, survey records, and transactions are held under strict professional privilege and confidentiality pursuant to the Advocates Act."
+ },
+ "footer": {
+  "desc": "Dedicated legal practice for deed examination, revenue record verification, and certified title opinions for property buyers and institutional acquisitions.",
+  "line_label": "Direct Practice Line",
+  "phone": "8099888851",
+  "links": [
+   [
+    "Pillars",
+    "#pillars"
+   ],
+   [
+    "Practice Areas",
+    "#services"
+   ],
+   [
+    "Search Depth",
+    "#search-depth"
+   ],
+   [
+    "Verification Flow",
+    "#process"
+   ],
+   [
+    "Counsel Practice",
+    "#expertise"
+   ],
+   [
+    "Testimonials",
+    "#reviews"
+   ],
+   [
+    "FAQ",
+    "#faq"
+   ],
+   [
+    "Contact",
+    "#contact"
+   ]
+  ],
+  "juris_label": "Service Jurisdictions",
+  "juris": "Telangana | Andhra Pradesh | New Delhi",
+  "copyright": "© 2026 RIVORA. All rights reserved.",
+  "descriptor": "Advocates & Associates"
+ },
+ "icons": [
+  "account_tree",
+  "arrow_forward",
+  "assignment",
+  "call",
+  "chat",
+  "check",
+  "check_circle",
+  "content_copy",
+  "east",
+  "encrypted",
+  "folder_open",
+  "gavel",
+  "manage_search",
+  "person",
+  "rule",
+  "security",
+  "star",
+  "verified",
+  "verified_user",
+  "west"
+ ],
+ "title": "RIVORA Advocates & Associates | Land & Property Title Verification"
+}

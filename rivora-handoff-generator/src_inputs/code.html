@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RIVORA Advocates &amp; Associates | Land &amp; Property Title Verification</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-low": "#f1f3ff",
+            "inverse-on-surface": "#eef0fd",
+            "secondary": "#A98A50",
+            "surface-container": "#ebedfa",
+            "surface-dim": "#d7dae6",
+            "surface-bright": "#f9f9ff",
+            "outline": "#76777c",
+            "on-surface": "#181c24",
+            "primary": "#151922",
+            "on-surface-variant": "#45474b",
+            "background": "#FBFAF7"
+          },
+          fontFamily: {
+            sans: ["DM Sans", "sans-serif"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'DM Sans', sans-serif;
+    }
+    ::-webkit-scrollbar { display: none; }
+
+    @keyframes marquee-forward {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee-forward 35s linear infinite;
+    }
+    .marquee-container:hover .marquee-track {
+      animation-play-state: paused;
+    }
+
+    @keyframes testimonial-forward {
+      0% { transform: translateX(-50%); }
+      100% { transform: translateX(0); }
+    }
+    .testimonial-marquee-track {
+      display: flex;
+      width: max-content;
+      animation: testimonial-forward 45s linear infinite;
+    }
+    .testimonial-marquee-container:hover .testimonial-marquee-track {
+      animation-play-state: paused;
+    }
+
+    /* SCROLL REVEAL ANIMATIONS */
+    .reveal-item {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+      transition-delay: var(--reveal-delay, 0ms);
+    }
+    .reveal-item.is-revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Staggered Delay Helpers */
+    .stagger-1 { --reveal-delay: 80ms; }
+    .stagger-2 { --reveal-delay: 160ms; }
+    .stagger-3 { --reveal-delay: 240ms; }
+    .stagger-4 { --reveal-delay: 320ms; }
+    .stagger-5 { --reveal-delay: 400ms; }
+    .stagger-6 { --reveal-delay: 480ms; }
+
+    /* Accessibility / Reduced Motion Fallback */
+    @media (prefers-reduced-motion: reduce) {
+      .marquee-track, .testimonial-marquee-track { animation: none; }
+      .marquee-container, .testimonial-marquee-container { overflow-x: auto; }
+      .reveal-item {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* No-JS fallback */
+    .no-js .reveal-item {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  </style>
+<script>
+    // Remove no-js class immediately if script is active
+    document.documentElement.classList.remove('no-js');
+  </script>
+</head>
+<body class="bg-[#FBFAF7] text-[#181c24] antialiased">
+<!-- HEADER -->
+<header class="top-0 inset-x-0 z-50 bg-[#FAF9F5]/95 backdrop-blur-sm border-b border-[#E4DED3]/60 absolute">
+<div class="h-20 max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between gap-6">
+<a class="flex items-center gap-3.5 group focus:outline-none" href="#hero">
+<div class="w-9 h-9 rounded-xl flex items-center justify-center bg-[#151922] text-white font-bold text-base tracking-widest shrink-0 border border-[#A98A50]/70">R</div>
+<div class="flex flex-col justify-center">
+<span class="text-[17px] tracking-[0.22em] font-bold text-[#151922] uppercase leading-none">RIVORA</span>
+<span class="text-[9.5px] uppercase tracking-[0.25em] text-[#A98A50] font-medium leading-none mt-1">ADVOCATES &amp; ASSOCIATES</span>
+</div>
+</a>
+<nav class="hidden xl:flex items-center gap-8">
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#pillars">PILLARS</a>
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#services">SERVICES</a>
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#search-depth">SEARCH DEPTH</a>
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#process">PROCESS</a>
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#expertise">ACQUISITIONS</a>
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#reviews">REVIEWS</a>
+<a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors" href="#faq">FAQ</a>
+</nav>
+<div class="flex items-center gap-3.5">
+<a class="inline-flex items-center justify-center bg-[#151922] text-white font-semibold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full border border-[#A98A50]/70 hover:bg-[#262C3B] hover:border-[#A98A50] transition-all" href="#contact">CONTACT</a>
+<a aria-label="Account" class="w-9 h-9 rounded-full bg-[#151922] text-white flex items-center justify-center hover:bg-[#262C3B] transition-colors shrink-0" href="#contact">
+<span class="material-symbols-outlined text-[19px]">person</span>
+</a>
+</div>
+</div>
+</header>
+<main class="w-full pt-20 bg-[#FBFAF7]">
+<!-- SECTION 01: HERO -->
+<section class="relative w-full overflow-hidden min-h-[660px] lg:min-h-[740px] flex items-center bg-[#151922] text-[#FBFAF7]" id="hero">
+<div class="absolute inset-0 z-0">
+<img alt="Cadastral map, legal volumes, balance of justice and farmland" class="w-full h-full object-cover object-right md:object-center select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARYtNl0lwyB5xagrgtWgt4iOfE4kSgv-ebPFXijD38yVdJnoaI882_ogKmyVO4KWEsGB8VUim5aoJ5QEHUw9WlkimMSM_Ue6dgeXJd9zWB6Gv7djwtMuaBqsM5AKURKeLSzegsWvBRxnrfLPkOVA-MTV4UQ7Qw5gzdeVRnEXgWe0X8ttF68SRVz03rlz-3QJuBm39Ghq9kHBEOkg41mB0Ss11mWeq2ZIF7_lDJUIZh5b-08Uf3kBQ_wA" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/85 via-[#151922]/40 to-transparent pointer-events-none"></div>
+</div>
+<div class="relative z-10 max-w-[1440px] w-full mx-auto px-6 md:px-10 lg:px-16 py-20 lg:py-28">
+<div class="max-w-3xl space-y-6">
+<div class="reveal-item stagger-1 inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-[11px] font-bold text-[#EDE8DD] uppercase tracking-widest">LEGAL SERVICES</span>
+</div>
+<h1 class="reveal-item stagger-2 text-4xl md:text-5xl lg:text-6xl font-bold text-[#FBFAF7] tracking-tight leading-[1.1]" style="text-shadow: rgba(0, 0, 0, 0.7) 0px 2px 10px;">
+            End-to-end land &amp; property title verification.
+          </h1>
+<p class="reveal-item stagger-3 text-lg md:text-xl text-[#EDE8DD] max-w-2xl leading-relaxed" style="text-shadow: rgba(0, 0, 0, 0.85) 0px 1px 6px;">
+            Comprehensive title scrutiny across plotted developments, agricultural land, and institutional acreage. Senior Advocate RK.V &amp; Associates personally scrutinize unbroken link chains from primary revenue records (Pahanis), cross-verify Sub-Registrar books, and deliver certified written legal opinions before you purchase or develop.
+          </p>
+<div class="reveal-item stagger-4 flex flex-wrap items-center gap-4 pt-3">
+<a class="inline-flex items-center justify-center px-7 py-3.5 bg-[#A98A50] text-white font-semibold text-sm tracking-wider uppercase border border-[#A98A50] shadow-sm hover:bg-[#8F733E] rounded-full transition-all" href="#contact">
+              Request a consultation<span class="material-symbols-outlined ml-2 text-[18px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center px-7 py-3.5 bg-[#151922]/80 text-[#FBFAF7] font-semibold text-sm tracking-wider uppercase border border-[#EDE8DD]/50 hover:bg-[#151922] hover:text-white rounded-full transition-colors" href="#services">
+              Our practice areas
+            </a>
+</div>
+<div class="reveal-item stagger-5 grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-[#EDE8DD]/25 max-w-2xl mt-6">
+<div>
+<span class="text-[11px] uppercase font-bold tracking-wider text-[#A0A5B2] block">Human Scrutiny</span>
+<span class="text-sm font-semibold text-[#FBFAF7] mt-1 block">Advocate RK.V &amp; Team</span>
+</div>
+<div>
+<span class="text-[11px] uppercase font-bold tracking-wider text-[#A0A5B2] block">Field Verification</span>
+<span class="text-sm font-semibold text-[#FBFAF7] mt-1 block">Revenue Archives &amp; Taluk</span>
+</div>
+<div>
+<span class="text-[11px] uppercase font-bold tracking-wider text-[#A0A5B2] block">Certified Deliverable</span>
+<span class="text-sm font-semibold text-[#FBFAF7] mt-1 block">Signed Written Legal Opinion</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- INFINITE HORIZONTAL MARQUEE -->
+<section aria-label="Cadastral Practice Highlights" class="marquee-container w-full bg-[#151922] py-4 border-y border-[#A98A50]/20 relative overflow-hidden select-none">
+<div class="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-28 bg-gradient-to-r from-[#151922] to-transparent z-10"></div>
+<div class="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-28 bg-gradient-to-l from-[#151922] to-transparent z-10"></div>
+<div class="marquee-track flex items-center">
+<div class="flex items-center shrink-0">
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">LAND INTELLIGENCE</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">TITLE VERIFICATION</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">PROPERTY DUE DILIGENCE</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">LEGAL RESEARCH</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">DOCUMENT SCRUTINY</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">OWNERSHIP HISTORY</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">LEGAL OPINIONS</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+</div>
+<div aria-hidden="true" class="flex items-center shrink-0">
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">LAND INTELLIGENCE</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">TITLE VERIFICATION</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">PROPERTY DUE DILIGENCE</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">LEGAL RESEARCH</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">DOCUMENT SCRUTINY</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">OWNERSHIP HISTORY</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+<span class="font-medium text-xs sm:text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff]">LEGAL OPINIONS</span>
+<span class="text-[#A98A50] mx-6 sm:mx-8 text-xs">✳</span>
+</div>
+</div>
+</section>
+<!-- SECTION 02: CORE PILLARS -->
+<section class="w-full bg-[#FBFAF7] border-b border-[#E4DED3] py-16" id="pillars">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="reveal-item flex flex-col md:flex-row items-baseline justify-between mb-10 pb-4 border-b border-[#E4DED3]">
+<span class="text-xs uppercase tracking-widest font-bold text-[#A98A50]">
+            Core Scrutiny Pillars // Property Assurance
+          </span>
+<span class="text-xs text-[#76777c]">
+            Thorough advocate-led examination protocols
+          </span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="reveal-item stagger-1 p-6 bg-white border border-[#E4DED3] rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-[11px] font-bold text-[#A98A50] uppercase tracking-wider">01 / Origin</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24]">Genesis &amp; Root Title</h3>
+<p class="text-xs text-[#45474b] leading-relaxed">
+              Exhaustive root examination through historical Pahanis, record of rights (ROR), mutation ledgers, and original sovereign grants.
+            </p>
+</div>
+<div class="reveal-item stagger-2 p-6 bg-white border border-[#E4DED3] rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-[11px] font-bold text-[#A98A50] uppercase tracking-wider">02 / Regulatory</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24]">Prohibited &amp; 22-A Scrutiny</h3>
+<p class="text-xs text-[#45474b] leading-relaxed">
+              Screening against Section 22-A prohibited registers, government assigned lands, Wakf/Endowment listings, and master plan zoning buffers.
+            </p>
+</div>
+<div class="reveal-item stagger-3 p-6 bg-white border border-[#E4DED3] rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-[11px] font-bold text-[#A98A50] uppercase tracking-wider">03 / Judicial</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24]">Litigation &amp; Court Searches</h3>
+<p class="text-xs text-[#45474b] leading-relaxed">
+              In-depth docket searches across civil jurisdictions, high courts, and revenue appellate authorities for adverse claims and lis pendens.
+            </p>
+</div>
+<div class="reveal-item stagger-4 p-6 bg-white border border-[#E4DED3] rounded-2xl shadow-sm space-y-3">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-[11px] font-bold text-[#A98A50] uppercase tracking-wider">04 / Evidentiary</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24]">Reasoned Written Opinion</h3>
+<p class="text-xs text-[#45474b] leading-relaxed">
+              Definitive legal certification, detailed defect remediation roadmaps, and actionable risk matrices under advocate signature.
+            </p>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 03: SERVICES / PRACTICE AREAS -->
+<section class="w-full bg-[#FBFAF7] py-20 lg:py-24" id="services">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="reveal-item flex flex-col md:flex-row md:items-end md:justify-between mb-10 pb-4 border-b border-[#E4DED3] gap-6">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-[#A98A50] block mb-2">Legal Practice Architecture</span>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Six practice areas, one standard of care</h2>
+<p class="text-base text-[#45474b] mt-2 max-w-2xl">Every engagement is personally conducted by our senior advocates, safeguarding families, institutional buyers, and property developers.</p>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<span class="text-xs uppercase tracking-widest text-[#5C6370] font-bold mr-2" id="slider-counter">01 / 06</span>
+<button aria-label="Previous Slide" class="w-12 h-12 rounded-full border border-[#E4DED3] bg-white hover:bg-[#151922] hover:text-white text-[#181c24] flex items-center justify-center transition-colors shadow-sm" onclick="movePracticeSlide(-1)">
+<span class="material-symbols-outlined text-[20px]">west</span>
+</button>
+<button aria-label="Next Slide" class="w-12 h-12 rounded-full border border-[#E4DED3] bg-white hover:bg-[#151922] hover:text-white text-[#181c24] flex items-center justify-center transition-colors shadow-sm" onclick="movePracticeSlide(1)">
+<span class="material-symbols-outlined text-[20px]">east</span>
+</button>
+</div>
+</div>
+<div class="reveal-item stagger-1 grid grid-cols-2 md:grid-cols-6 gap-3 mb-6" id="practice-tabs">
+<button class="practice-tab-btn py-3 px-3.5 border border-[#A98A50] bg-[#151922] text-white text-left rounded-xl transition-all" onclick="goToPracticeSlide(0)">
+<span class="text-[10px] tracking-widest block font-bold text-[#A98A50]">01 // TITLE</span>
+<span class="text-xs truncate block font-medium">Due Diligence</span>
+</button>
+<button class="practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#F5F2EB] text-[#151922] text-left rounded-xl transition-all" onclick="goToPracticeSlide(1)">
+<span class="text-[10px] tracking-widest block font-bold text-[#76777c]">02 // ADVISORY</span>
+<span class="text-xs truncate block font-medium">Pre-Litigation</span>
+</button>
+<button class="practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#F5F2EB] text-[#151922] text-left rounded-xl transition-all" onclick="goToPracticeSlide(2)">
+<span class="text-[10px] tracking-widest block font-bold text-[#76777c]">03 // DEEDS</span>
+<span class="text-xs truncate block font-medium">Documentation</span>
+</button>
+<button class="practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#F5F2EB] text-[#151922] text-left rounded-xl transition-all" onclick="goToPracticeSlide(3)">
+<span class="text-[10px] tracking-widest block font-bold text-[#76777c]">04 // CORPORATE</span>
+<span class="text-xs truncate block font-medium">Institutional</span>
+</button>
+<button class="practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#F5F2EB] text-[#151922] text-left rounded-xl transition-all" onclick="goToPracticeSlide(4)">
+<span class="text-[10px] tracking-widest block font-bold text-[#76777c]">05 // CONTRACTS</span>
+<span class="text-xs truncate block font-medium">Contract Drafting</span>
+</button>
+<button class="practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#F5F2EB] text-[#151922] text-left rounded-xl transition-all" onclick="goToPracticeSlide(5)">
+<span class="text-[10px] tracking-widest block font-bold text-[#76777c]">06 // DEFENSE</span>
+<span class="text-xs truncate block font-medium">Litigation Support</span>
+</button>
+</div>
+<div class="reveal-item stagger-2 relative w-full overflow-hidden border border-[#E4DED3] shadow-md bg-[#151922] min-h-[460px] md:min-h-[500px] rounded-3xl">
+<!-- Slide 01 -->
+<div class="practice-slide active absolute inset-0 transition-opacity duration-500 opacity-100 z-10">
+<img alt="Farmland cadastral survey" class="w-full h-full object-cover object-center absolute inset-0 select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrBHp2ougT3M6IweJLGyNVkC6KTKG04yNSLfjrNaG72An7Cr916B0te9sb2-zddCT84Jp8-Zo9yiBGPe6yGuDrrTwN8yGPRAQ4RRfs0zuNciykM8MOtulupkPPq8reen5kBY7IUDqMpu04WMcxTKcoJ4g9mr6NJKSyrpMahfl6pvnflTk97JEpzStL60nVofD_vnXAJEe6NvwqM7XzymIxwP33rSdQw03l5Do5WGpyf5" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/95 via-[#151922]/80 md:via-[#151922]/65 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-between p-8 md:p-14 text-white max-w-3xl">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">PRACTICE 01 // CORE DUE DILIGENCE</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight">End-to-end title due diligence</h3>
+<p class="text-base text-[#EDE8DD] leading-relaxed max-w-2xl">
+                  Complete chain-of-title examination from root Pahanis to registered deeds, Section 22-A prohibited checks, and certified title opinions.
+                </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Root Pahanis &amp; ROR</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Section 22-A Ledger</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Certified Title Opinion</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 flex items-center justify-between mt-6">
+<span class="text-xs font-bold uppercase text-[#EDE8DD]">Advocate-Signed Legal Report</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#A98A50] transition-colors" href="#contact">Initiate Scrutiny <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Slide 02 -->
+<div class="practice-slide absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none z-0">
+<img alt="Law books desk" class="w-full h-full object-cover object-center absolute inset-0 select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrDpQ65hni3oCwLG_1Q3x78xPOvpB-ZzT6N45l0HlYt-Xq4ENSMjoZu7JJDkOyyzKzDqtXF_0EqGTxyAitLIKj0QjiM3fLzNPXnGSCZ8Y4x1mLTDhpugv9skS6x6CJO9qslqtVNkGiPMg8CLlhFKxTw02cFCAdCUtH9rjfi2OpxTrWWXbtuGjJJIH-BuYY3_SXESphCdEUl-lWlBSZ9LjygjPG7On-a_wMRd8Bqnz4gWFg" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/95 via-[#151922]/80 md:via-[#151922]/65 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-between p-8 md:p-14 text-white max-w-3xl">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">PRACTICE 02 // PREEMPTIVE DEFENSE</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight">Pre-litigation opinions</h3>
+<p class="text-base text-[#EDE8DD] leading-relaxed max-w-2xl">
+                  Preemptive legal risk advisory, boundary validation, and dispute mitigation prior to financial commitment.
+                </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Adverse Claim Assessment</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Boundary Scrutiny</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Dispute Insulation</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 flex items-center justify-between mt-6">
+<span class="text-xs font-bold uppercase text-[#EDE8DD]">Advisory &amp; Risk Matrix</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#A98A50] transition-colors" href="#contact">Request Legal Opinion <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Slide 03 -->
+<div class="practice-slide absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none z-0">
+<img alt="Conveyance deeds" class="w-full h-full object-cover object-center absolute inset-0 select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrAsPs1EFLBHSpaVgcpDIfHH6uzsq_3gtR7ef2kJmQG5zsqk10gqLeZim64aKeOqnmH7VuPrEAphLyUeN3SI61ym3tfdjfN0fVeSqFzd_nAwp8YjnIKJsTcJs_yAko8m2MDXiLsggdaU7GxtIZ0g-1aJGnk7YhlPqmE3GLGf1468QKMoUcP5H-1MD0vi62C0gw-hqJEOAMi3Nw3LsXoVWjTcQbWNM38q6GdyntI11ZL3yg" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/95 via-[#151922]/80 md:via-[#151922]/65 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-between p-8 md:p-14 text-white max-w-3xl">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">PRACTICE 03 // CONVEYANCING</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight">Property documentation</h3>
+<p class="text-base text-[#EDE8DD] leading-relaxed max-w-2xl">
+                  Vetted drafting and execution of absolute sale deeds, partition deeds, settlement deeds, and registration filings.
+                </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Sale Deeds</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Family Partition Instruments</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Sub-Registrar Execution</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 flex items-center justify-between mt-6">
+<span class="text-xs font-bold uppercase text-[#EDE8DD]">Vetted Executed Instruments</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#A98A50] transition-colors" href="#contact">Schedule Drafting <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Slide 04 -->
+<div class="practice-slide absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none z-0">
+<img alt="Corporate advisory boardroom" class="w-full h-full object-cover object-center absolute inset-0 select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrC62eWiFpeVBkhpWznlrsgwNZRTUSCwMWyqwxXACr5mDjGtjA9JdRiBnceD-9oXuUm-sdfsBXc4FEi2i8QwfrsqeauGbI4rEAGE3CNzJKZhW9p1USbtkPBOHlv3cYYxgv_HVZX2p3cg8WMtYLG45IUttaS1MzHaoEA5FXFM-mSz94lPmGtwLDg2Qr-CUkhLsXuGOV2z_wte843sjTZdpsNDZrOCoNB-jMQ8gQrDBtOV" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/95 via-[#151922]/80 md:via-[#151922]/65 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-between p-8 md:p-14 text-white max-w-3xl">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">PRACTICE 04 // CORPORATE LAND HOLDINGS</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight">Corporate legal advisory</h3>
+<p class="text-base text-[#EDE8DD] leading-relaxed max-w-2xl">
+                  Institutional due diligence for REITs, multi-acre corporate acquisitions, mergers, and project financing.
+                </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">REIT Asset Scrutiny</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Banking Project Finance</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Statutory Ceilings</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 flex items-center justify-between mt-6">
+<span class="text-xs font-bold uppercase text-[#EDE8DD]">Corporate Due Diligence Dossier</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#A98A50] transition-colors" href="#contact">Engage Advisory Counsel <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Slide 05 -->
+<div class="practice-slide absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none z-0">
+<img alt="Contract drafting desk" class="w-full h-full object-cover object-center absolute inset-0 select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrCcG4XD2CnZtHnKxq2F5qOKxhs8AukT4MPfHXod713kRiOwk_USwQB7XyEmFgo54wMHOZy44e9Zz_8bp6fbLfGvBzBThkEjmqG57BnFhWW5XY9k7XDjO_YmTdxCPyhkufLS_MOkSPyuHNoqB79wP_dLv1m852DiL5U6Lcr9lp2XtREN1coVUJ8ocjXhU5HnfcwFo664u9MzuPY9lQstAHm2-GHHivTjqTvmmUkIGpzJCw" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/95 via-[#151922]/80 md:via-[#151922]/65 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-between p-8 md:p-14 text-white max-w-3xl">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">PRACTICE 05 // COMMERCIAL COVENANTS</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight">Contract drafting</h3>
+<p class="text-base text-[#EDE8DD] leading-relaxed max-w-2xl">
+                  Bespoke Joint Development Agreements (JDA), development rights transfers, and commercial EPC covenants.
+                </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">JDA &amp; GPA Agreements</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Long-term Lease Deeds</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">EPC Safeguards</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 flex items-center justify-between mt-6">
+<span class="text-xs font-bold uppercase text-[#EDE8DD]">Customized Transaction Contracts</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#A98A50] transition-colors" href="#contact">Structure Covenants <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+<!-- Slide 06 -->
+<div class="practice-slide absolute inset-0 transition-opacity duration-500 opacity-0 pointer-events-none z-0">
+<img alt="Judicial courtroom appellate legal chamber" class="w-full h-full object-cover object-center absolute inset-0 select-none" src="https://lh3.googleusercontent.com/aida/ALJJyrCWKH5I4I84Q-itnVFi8AtmQzydrC5S-Z7i68xhkRPQZpnfn22-jaVugrLK4TviVQw7R7OK-hHnfi8vSJNICNK_6zuhQzz3SFmTwUpinA9kr8b7YfsTqYOgPVKhWU3WP4IUnK-Q00L8fM2DCP3Bjrd_TbXG7v9SnhTzpIcJ-dgLMMcerMSbSCdH3Vxv7McfjtahmQmgiS2n6ez5HNJ3LOkbZWsYPTOiw0HJ3CN5oCsfpA" style="image-rendering: -webkit-optimize-contrast;"/>
+<div class="absolute inset-0 bg-gradient-to-r from-[#151922]/95 via-[#151922]/80 md:via-[#151922]/65 to-transparent"></div>
+<div class="relative z-10 h-full flex flex-col justify-between p-8 md:p-14 text-white max-w-3xl">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#151922]/90 border border-[#A98A50] rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">PRACTICE 06 // FORENSIC DEFENSE</span>
+</div>
+<h3 class="text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight">Litigation support</h3>
+<p class="text-base text-[#EDE8DD] leading-relaxed max-w-2xl">
+                  Historical forensic research, revenue and civil court defense, and title defect rectification strategies.
+                </p>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Revenue Appellate Defense</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Defect Rectification Deeds</span>
+<span class="text-xs font-semibold uppercase tracking-wider bg-[#151922]/80 px-3 py-1.5 border border-white/20 text-[#FBFAF7] rounded-full">Lis Pendens Resolution</span>
+</div>
+</div>
+<div class="pt-6 border-t border-white/20 flex items-center justify-between mt-6">
+<span class="text-xs font-bold uppercase text-[#EDE8DD]">Advocate Courtroom Strategy</span>
+<a class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#A98A50] transition-colors" href="#contact">Consult Defense Counsel <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 04: SEARCH DEPTH -->
+<section class="w-full bg-[#F5F2EB] border-t border-[#E4DED3] py-20 lg:py-24" id="search-depth">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="reveal-item text-center max-w-3xl mx-auto mb-16">
+<span class="text-xs uppercase font-bold tracking-widest text-[#A98A50] block mb-2">Investigation Horizons</span>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">How far back we search</h2>
+<p class="text-base text-[#45474b] mt-3">Land rights are generational. We tailor historical scrutiny to the specific legal risks of each transaction class.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+<!-- 15 Years -->
+<div class="reveal-item stagger-1 bg-white p-8 border border-[#E4DED3] rounded-3xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-baseline justify-between mb-4 pb-4 border-b border-[#E4DED3]">
+<span class="text-4xl font-bold text-[#181c24]">15</span>
+<span class="text-xs uppercase font-bold text-[#76777c]">Years Horizon</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24] mb-3">Focused search</h3>
+<p class="text-xs text-[#45474b] mb-6 leading-relaxed">
+                Designed for standard residential resale properties in developed gated communities with clear prior institutional approvals.
+              </p>
+<ul class="space-y-2.5 text-xs text-[#45474b]">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Registered link documents</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Encumbrance search (EC)</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Recent property tax receipts</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Approved layout plan verification</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<span class="text-xs uppercase font-bold text-[#76777c] block">Suitability</span>
+<span class="text-xs font-semibold text-[#181c24]">Apartments &amp; Plotted Resales</span>
+</div>
+</div>
+<!-- 30 Years -->
+<div class="reveal-item stagger-2 bg-white p-8 border-2 border-[#A98A50] rounded-3xl flex flex-col justify-between relative shadow-md">
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-[#A98A50] text-white px-5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+              Statutory Standard Benchmark
+            </div>
+<div>
+<div class="flex items-baseline justify-between mb-4 pb-4 border-b border-[#E4DED3] pt-2">
+<span class="text-4xl font-bold text-[#A98A50]">30</span>
+<span class="text-xs uppercase font-bold text-[#A98A50]">Recommended</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24] mb-3">General standard</h3>
+<p class="text-xs text-[#45474b] mb-6 leading-relaxed">
+                The recommended legal standard under property law. Verifies an unbroken 30-year chain of title, ensuring root title validity and eliminating undisclosed claims.
+              </p>
+<ul class="space-y-2.5 text-xs text-[#45474b]">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check_circle</span> Unbroken title sequence</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check_circle</span> Revenue records &amp; Pahani ledger</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check_circle</span> Section 22-A prohibited property scan</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check_circle</span> Civil court index search</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check_circle</span> Sub-Registrar books inspection</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<span class="text-xs uppercase font-bold text-[#A98A50] block">Legal Protection</span>
+<span class="text-xs font-semibold text-[#181c24]">Institutional Purchases &amp; Major Investments</span>
+</div>
+</div>
+<!-- 60 Years -->
+<div class="reveal-item stagger-3 bg-white p-8 border border-[#E4DED3] rounded-3xl flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-baseline justify-between mb-4 pb-4 border-b border-[#E4DED3]">
+<span class="text-4xl font-bold text-[#181c24]">60</span>
+<span class="text-xs uppercase font-bold text-[#76777c]">Years Horizon</span>
+</div>
+<h3 class="text-xl font-semibold text-[#181c24] mb-3">Extended search</h3>
+<p class="text-xs text-[#45474b] mb-6 leading-relaxed">
+                Exhaustive historical forensic scrutiny for ancestral agricultural tracts, large parcels, greenfield conversions, and high-value sovereign assets.
+              </p>
+<ul class="space-y-2.5 text-xs text-[#45474b]">
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Inam / Jagir / Grant root validation</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Khasra Pahani genealogy verification</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Statutory land ceiling audits</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Wakf, Endowments &amp; Govt. land records</li>
+<li class="flex items-center gap-2"><span class="material-symbols-outlined text-[16px] text-[#A98A50]">check</span> Survey boundary &amp; Tippani reconciliation</li>
+</ul>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<span class="text-xs uppercase font-bold text-[#76777c] block">Suitability</span>
+<span class="text-xs font-semibold text-[#181c24]">Agricultural Land, Large Parcels &amp; JVs</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 05: PROCESS -->
+<section class="w-full bg-[#FBFAF7] py-20 lg:py-24 border-t border-[#E4DED3]" id="process">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="reveal-item max-w-3xl mb-16">
+<span class="text-xs uppercase font-bold tracking-widest text-[#A98A50] block mb-2">Protocol &amp; Execution</span>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">How our advocates examine your property</h2>
+<p class="text-base text-[#45474b] mt-3">A methodical, five-stage legal scrutiny pipeline handled directly by senior practitioners.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+<!-- Stage 1 -->
+<div class="reveal-item stagger-1 group bg-white hover:bg-[#151922] p-7 rounded-2xl border border-[#E4DED3] hover:border-[#A98A50] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.03]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-[#A98A50] tracking-wider">STAGE 01</span>
+<span class="material-symbols-outlined text-[#76777c] group-hover:text-[#A98A50] text-[20px] transition-colors">assignment</span>
+</div>
+<h3 class="text-lg font-semibold text-[#181c24] group-hover:text-[#FBFAF7] mb-2 transition-colors">Consultation</h3>
+<p class="text-xs text-[#45474b] group-hover:text-[#EDE8DD] leading-relaxed transition-colors">
+                Direct discussion with counsel: parcel identifiers, survey numbers, transaction structure, and verification objectives.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-[#E4DED3] group-hover:border-white/20 transition-colors">
+<span class="text-[11px] font-bold uppercase text-[#76777c] group-hover:text-[#A0A5B2] block">Deliverable</span>
+<span class="text-xs font-semibold text-[#181c24] group-hover:text-[#FBFAF7]">Scope Document</span>
+</div>
+</div>
+<!-- Stage 2 -->
+<div class="reveal-item stagger-2 group bg-white hover:bg-[#151922] p-7 rounded-2xl border border-[#E4DED3] hover:border-[#A98A50] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.03]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-[#A98A50] tracking-wider">STAGE 02</span>
+<span class="material-symbols-outlined text-[#76777c] group-hover:text-[#A98A50] text-[20px] transition-colors">folder_open</span>
+</div>
+<h3 class="text-lg font-semibold text-[#181c24] group-hover:text-[#FBFAF7] mb-2 transition-colors">Documents</h3>
+<p class="text-xs text-[#45474b] group-hover:text-[#EDE8DD] leading-relaxed transition-colors">
+                Physical collation of certified link deeds, historical Pahanis, ECs, village maps, and layout approvals from taluk archives.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-[#E4DED3] group-hover:border-white/20 transition-colors">
+<span class="text-[11px] font-bold uppercase text-[#76777c] group-hover:text-[#A0A5B2] block">Deliverable</span>
+<span class="text-xs font-semibold text-[#181c24] group-hover:text-[#FBFAF7]">Dossier Collation</span>
+</div>
+</div>
+<!-- Stage 3 -->
+<div class="reveal-item stagger-3 group bg-white hover:bg-[#151922] p-7 rounded-2xl border-2 border-[#A98A50] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.03]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-[#A98A50] tracking-wider">STAGE 03</span>
+<span class="material-symbols-outlined text-[#A98A50] text-[20px]">manage_search</span>
+</div>
+<h3 class="text-lg font-semibold text-[#181c24] group-hover:text-[#FBFAF7] mb-2 transition-colors">Scrutiny</h3>
+<p class="text-xs text-[#45474b] group-hover:text-[#EDE8DD] leading-relaxed transition-colors">
+                In-depth legal examination, Section 22-A prohibited register inspection, civil court indices, and master plan zoning checks.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-[#E4DED3] group-hover:border-white/20 transition-colors">
+<span class="text-[11px] font-bold uppercase text-[#A98A50] block">Deliverable</span>
+<span class="text-xs font-semibold text-[#181c24] group-hover:text-[#FBFAF7]">Legal Analysis</span>
+</div>
+</div>
+<!-- Stage 4 -->
+<div class="reveal-item stagger-4 group bg-white hover:bg-[#151922] p-7 rounded-2xl border border-[#E4DED3] hover:border-[#A98A50] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.03]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-[#A98A50] tracking-wider">STAGE 04</span>
+<span class="material-symbols-outlined text-[#76777c] group-hover:text-[#A98A50] text-[20px] transition-colors">gavel</span>
+</div>
+<h3 class="text-lg font-semibold text-[#181c24] group-hover:text-[#FBFAF7] mb-2 transition-colors">Written Opinion</h3>
+<p class="text-xs text-[#45474b] group-hover:text-[#EDE8DD] leading-relaxed transition-colors">
+                Delivery of comprehensive, reasoned written title scrutiny report and risk matrix bearing counsel's seal and signature.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-[#E4DED3] group-hover:border-white/20 transition-colors">
+<span class="text-[11px] font-bold uppercase text-[#76777c] group-hover:text-[#A0A5B2] block">Deliverable</span>
+<span class="text-xs font-semibold text-[#181c24] group-hover:text-[#FBFAF7]">Reasoned Opinion</span>
+</div>
+</div>
+<!-- Stage 5 -->
+<div class="reveal-item stagger-5 group bg-white hover:bg-[#151922] p-7 rounded-2xl border border-[#E4DED3] hover:border-[#A98A50] flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300 hover:scale-[1.03]">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-xs font-bold text-[#A98A50] tracking-wider">STAGE 05</span>
+<span class="material-symbols-outlined text-[#76777c] group-hover:text-[#A98A50] text-[20px] transition-colors">verified</span>
+</div>
+<h3 class="text-lg font-semibold text-[#181c24] group-hover:text-[#FBFAF7] mb-2 transition-colors">Transaction Support</h3>
+<p class="text-xs text-[#45474b] group-hover:text-[#EDE8DD] leading-relaxed transition-colors">
+                Practical advice on defect remediation, drafting protective deed covenants, Sub-Registrar guidance, and closing.
+              </p>
+</div>
+<div class="pt-4 mt-6 border-t border-[#E4DED3] group-hover:border-white/20 transition-colors">
+<span class="text-[11px] font-bold uppercase text-[#76777c] group-hover:text-[#A0A5B2] block">Deliverable</span>
+<span class="text-xs font-semibold text-[#181c24] group-hover:text-[#FBFAF7]">Closing Support</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 06: CORPORATE ACQUISITIONS -->
+<section class="w-full bg-[#F5F2EB] border-t border-[#E4DED3] py-20 lg:py-24" id="expertise">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="reveal-item stagger-1 lg:col-span-6 space-y-6">
+<span class="text-xs uppercase font-bold tracking-widest text-[#A98A50] block">Experienced Legal Counsel</span>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Trusted for high-stakes corporate acquisitions</h2>
+<p class="text-base text-[#45474b] leading-relaxed">
+              Advocate RK.V and our senior legal team act as independent property counsel for institutional funds, developers, and corporate entities acquiring significant acreage across Southern India.
+            </p>
+<div class="space-y-4 pt-2">
+<div class="p-5 bg-white border border-[#E4DED3] rounded-2xl flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-[#A98A50] text-2xl shrink-0 mt-0.5">account_tree</span>
+<div>
+<h4 class="text-sm font-semibold text-[#181c24]">Physical inspection of complex land records</h4>
+<p class="text-xs text-[#45474b] mt-1">Reconciling revenue department mutation ledgers, village survey maps, and registration department book extracts into a coherent evidentiary chain.</p>
+</div>
+</div>
+<div class="p-5 bg-white border border-[#E4DED3] rounded-2xl flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-[#A98A50] text-2xl shrink-0 mt-0.5">rule</span>
+<div>
+<h4 class="text-sm font-semibold text-[#181c24]">Strict adherence to land ceiling &amp; master-plan regulations</h4>
+<p class="text-xs text-[#45474b] mt-1">Verifying agricultural land ceilings, urban development authority land-use master plans, and environmental buffer covenants.</p>
+</div>
+</div>
+<div class="p-5 bg-white border border-[#E4DED3] rounded-2xl flex items-start gap-4 shadow-sm">
+<span class="material-symbols-outlined text-[#A98A50] text-2xl shrink-0 mt-0.5">security</span>
+<div>
+<h4 class="text-sm font-semibold text-[#181c24]">Uncompromising fiduciary independence</h4>
+<p class="text-xs text-[#45474b] mt-1">Independent opinions uninfluenced by broker mandates, designed solely to insulate purchaser liability and protect your investment.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal-item stagger-2 lg:col-span-6">
+<div class="bg-white border border-[#E4DED3] p-8 lg:p-10 shadow-sm rounded-3xl">
+<div class="flex items-center justify-between border-b border-[#E4DED3] pb-4 mb-6">
+<div>
+<span class="text-xs uppercase font-bold text-[#A98A50] block">Counsel Verification Checklist</span>
+<span class="text-base font-semibold text-[#181c24]">Legal Due Diligence Scrutiny Points</span>
+</div>
+<span class="text-xs font-bold bg-[#EDE8DD] px-3 py-1 text-[#181c24] uppercase rounded-full">Advocate Practice</span>
+</div>
+<div class="space-y-3 text-xs">
+<div class="flex items-center justify-between py-2.5 border-b border-[#E4DED3]/60">
+<span class="text-[#45474b]">Revenue Mutation Analysis</span>
+<span class="text-xs font-bold text-[#A98A50]">VERIFIED / UNBROKEN</span>
+</div>
+<div class="flex items-center justify-between py-2.5 border-b border-[#E4DED3]/60">
+<span class="text-[#45474b]">Section 22-A Prohibited Ledger</span>
+<span class="text-xs font-bold text-[#A98A50]">NEGATIVE / CLEAR</span>
+</div>
+<div class="flex items-center justify-between py-2.5 border-b border-[#E4DED3]/60">
+<span class="text-[#45474b]">Tippani &amp; FMB Field Measurement</span>
+<span class="text-xs font-bold text-[#A98A50]">CONGRUENT WITH DEED</span>
+</div>
+<div class="flex items-center justify-between py-2.5 border-b border-[#E4DED3]/60">
+<span class="text-[#45474b]">High Court / Civil Court Docket Scan</span>
+<span class="text-xs font-bold text-[#A98A50]">NO LIS PENDENS</span>
+</div>
+<div class="flex items-center justify-between py-2.5">
+<span class="text-[#45474b]">Master Plan Land Zone Status</span>
+<span class="text-xs font-bold text-[#181c24]">PERMITTED ZONE</span>
+</div>
+</div>
+<div class="mt-8 p-5 bg-[#FBFAF7] border border-[#E4DED3] rounded-2xl">
+<span class="text-xs font-bold uppercase text-[#76777c] block mb-1">Counsel Oversight Assurance</span>
+<p class="text-xs text-[#45474b] leading-relaxed">
+                  Every written report is authored by certified legal counsel, backed by certified extract copies from the relevant taluk and registrar offices.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 07: CLIENT REVIEWS (HORIZONTAL MARQUEE) -->
+<section class="w-full bg-[#FBFAF7] py-20 lg:py-24 border-t border-[#E4DED3] overflow-hidden" id="reviews">
+<div class="reveal-item max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 mb-12">
+<span class="text-xs uppercase font-bold tracking-widest text-[#A98A50] block mb-2">Testimonials &amp; Credentials</span>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Client reviews</h2>
+<p class="text-base text-[#45474b] mt-2">What property owners, investors, and developers say about working with RK.V and the RIVORA team.</p>
+</div>
+<div class="reveal-item stagger-1 testimonial-marquee-container relative w-full overflow-hidden select-none py-3">
+<div class="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-28 bg-gradient-to-r from-[#FBFAF7] to-transparent z-20"></div>
+<div class="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-28 bg-gradient-to-l from-[#FBFAF7] to-transparent z-20"></div>
+<div class="testimonial-marquee-track flex items-stretch gap-6 pl-6">
+<!-- Card 1 -->
+<div class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "RIVORA's scrutiny of a 42-acre parcel in Rangareddy identified an undisclosed 1984 partition flaw that two previous law firms overlooked. Saved our fund over ₹18 Crores in dispute liability."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Anand V. Rao</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Managing Director, Horizon Realty Funds</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "Their rigorous check against the Section 22-A prohibited property registry is the fastest and most dependable in the state. RK.V and his team operate with surgical precision."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Siddharth Reddy</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Partner, Prime Infraventures</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "As an NRI acquiring ancestral land, navigating Telangana's Dharani portal and manual archives seemed daunting. RIVORA tracked 50 years of Pahani mutation entries within ten days."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Deepa K. Murthy</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Family Trust Trustee, Singapore</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "Their written opinions read like judicial rulings—clear, objective, and backed by certified revenue extracts. Our banking partners approved our project finance purely on their report."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Rajeshwar G.</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Chief Operating Officer, Apex Logistics Parks</span>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "Uncompromised independence is their signature. They don't give opinions to rubber-stamp sales; they defend your investment capital with uncompromising integrity. The only title verification team we trust."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3] flex items-center justify-between gap-3">
+<div>
+<h5 class="text-xs font-semibold text-[#181c24]">Kavitha Nambiar</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Senior Legal Counsel, Equitas Asset Management</span>
+</div>
+<span class="text-[10px] font-bold text-[#A98A50] uppercase bg-[#FBFAF7] px-2.5 py-1 border border-[#E4DED3] rounded-full shrink-0">VERIFIED</span>
+</div>
+</div>
+<!-- Mirror Duplicate for Seamless Looping -->
+<div aria-hidden="true" class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "RIVORA's scrutiny of a 42-acre parcel in Rangareddy identified an undisclosed 1984 partition flaw that two previous law firms overlooked. Saved our fund over ₹18 Crores in dispute liability."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Anand V. Rao</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Managing Director, Horizon Realty Funds</span>
+</div>
+</div>
+<div aria-hidden="true" class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "Their rigorous check against the Section 22-A prohibited property registry is the fastest and most dependable in the state. RK.V and his team operate with surgical precision."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Siddharth Reddy</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Partner, Prime Infraventures</span>
+</div>
+</div>
+<div aria-hidden="true" class="w-[420px] max-w-[85vw] shrink-0 bg-white p-7 border border-[#E4DED3] rounded-2xl flex flex-col justify-between shadow-sm">
+<div class="space-y-4">
+<div class="flex text-[#A98A50] text-sm">
+<span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span><span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="text-xs text-[#181c24] leading-relaxed">
+                "As an NRI acquiring ancestral land, navigating Telangana's Dharani portal and manual archives seemed daunting. RIVORA tracked 50 years of Pahani mutation entries within ten days."
+              </p>
+</div>
+<div class="pt-6 mt-6 border-t border-[#E4DED3]">
+<h5 class="text-xs font-semibold text-[#181c24]">Deepa K. Murthy</h5>
+<span class="text-[11px] font-bold text-[#76777c] uppercase block">Family Trust Trustee, Singapore</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 08: FAQ -->
+<section class="w-full bg-[#F5F2EB] py-20 lg:py-24 border-t border-[#E4DED3]" id="faq">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<div class="reveal-item stagger-1 lg:col-span-5 lg:sticky lg:top-28 space-y-6">
+<div>
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-white border border-[#E4DED3] mb-4 shadow-sm rounded-full">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-[11px] uppercase tracking-widest text-[#A98A50] font-bold">FAQ // LEGAL KNOWLEDGE BASE</span>
+</div>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight leading-tight">Frequently asked questions</h2>
+<p class="text-base text-[#45474b] mt-3 leading-relaxed">Essential legal insights into property scrutiny, statutory risks, and title defense across South India.</p>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center justify-between gap-4 px-5 py-2.5 rounded-full bg-[#151922] text-[#FBFAF7] border border-[#262C3B] hover:border-[#A98A50] hover:bg-[#262C3B] shadow-sm transition-all group focus:outline-none" href="#contact">
+<span class="font-medium text-xs tracking-wider uppercase text-[#FBFAF7] group-hover:text-white">Ask Us a Question</span>
+<span class="w-6 h-6 rounded-full bg-[#A98A50] flex items-center justify-center shrink-0 shadow-sm group-hover:bg-[#8F733E] transition-colors">
+<span class="w-1.5 h-1.5 rounded-full bg-[#151922]"></span>
+</span>
+</a>
+</div>
+<div class="flex items-center gap-2.5 text-[#45474b] text-xs">
+<span class="material-symbols-outlined text-[#A98A50] text-lg">verified_user</span>
+<span>All inquiries reviewed directly by Advocate RK.V &amp; Associates</span>
+</div>
+</div>
+<div class="lg:col-span-7 space-y-4" id="faq-accordion">
+<!-- FAQ 1 -->
+<div class="reveal-item stagger-1 bg-white border border-[#E4DED3] shadow-sm rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none group" onclick="toggleFaq(this)" type="button">
+<div class="flex items-start md:items-center gap-3.5">
+<span class="text-[11px] font-bold text-[#A98A50] bg-[#FAF9F5] px-2.5 py-1 border border-[#E4DED3] shrink-0 rounded-lg">01</span>
+<span class="text-base md:text-lg text-[#181c24] font-semibold group-hover:text-[#A98A50] transition-colors">What documents are required for a property title verification?</span>
+</div>
+<span class="faq-indicator shrink-0 w-8 h-8 rounded-full bg-[#FAF9F5] border border-[#E4DED3] flex items-center justify-center text-[#151922] font-bold text-base group-hover:border-[#A98A50] group-hover:text-[#A98A50] transition-all">+</span>
+</button>
+<div class="hidden px-6 pb-6 pt-1 border-t border-[#E4DED3]/60 text-[#45474b] text-xs md:text-sm leading-relaxed bg-[#FAF9F5]/40">
+                Essential documents include the original link documents tracing ownership for at least 30 years, current and historical Pahanis (ROR), Encumbrance Certificates (EC Form 15 and Form 16), revenue mutation registers, village layout or Tippani survey maps, tax assessment receipts, and layout approvals from the statutory planning authority.
+              </div>
+</div>
+<!-- FAQ 2 -->
+<div class="reveal-item stagger-2 bg-white border border-[#E4DED3] shadow-sm rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none group" onclick="toggleFaq(this)" type="button">
+<div class="flex items-start md:items-center gap-3.5">
+<span class="text-[11px] font-bold text-[#A98A50] bg-[#FAF9F5] px-2.5 py-1 border border-[#E4DED3] shrink-0 rounded-lg">02</span>
+<span class="text-base md:text-lg text-[#181c24] font-semibold group-hover:text-[#A98A50] transition-colors">What is Section 22-A and why is it critical in land transactions?</span>
+</div>
+<span class="faq-indicator shrink-0 w-8 h-8 rounded-full bg-[#FAF9F5] border border-[#E4DED3] flex items-center justify-center text-[#151922] font-bold text-base group-hover:border-[#A98A50] group-hover:text-[#A98A50] transition-all">+</span>
+</button>
+<div class="hidden px-6 pb-6 pt-1 border-t border-[#E4DED3]/60 text-[#45474b] text-xs md:text-sm leading-relaxed bg-[#FAF9F5]/40">
+                Section 22-A of the Registration Act mandates a prohibition list of properties that cannot be registered. This includes government assigned lands, Wakf properties, Endowments land, acquired lands, and parcels under litigation or ceiling surplus. A property notified under Section 22-A cannot be transferred, and any transaction is void ab initio.
+              </div>
+</div>
+<!-- FAQ 3 -->
+<div class="reveal-item stagger-3 bg-white border border-[#E4DED3] shadow-sm rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none group" onclick="toggleFaq(this)" type="button">
+<div class="flex items-start md:items-center gap-3.5">
+<span class="text-[11px] font-bold text-[#A98A50] bg-[#FAF9F5] px-2.5 py-1 border border-[#E4DED3] shrink-0 rounded-lg">03</span>
+<span class="text-base md:text-lg text-[#181c24] font-semibold group-hover:text-[#A98A50] transition-colors">How long does an end-to-end title verification report take?</span>
+</div>
+<span class="faq-indicator shrink-0 w-8 h-8 rounded-full bg-[#FAF9F5] border border-[#E4DED3] flex items-center justify-center text-[#151922] font-bold text-base group-hover:border-[#A98A50] group-hover:text-[#A98A50] transition-all">+</span>
+</button>
+<div class="hidden px-6 pb-6 pt-1 border-t border-[#E4DED3]/60 text-[#45474b] text-xs md:text-sm leading-relaxed bg-[#FAF9F5]/40">
+                A standard 30-year verification for urban plotted properties typically takes 5 to 7 business days once certified copies are collated. Complex agricultural acquisitions, large commercial tracts, or 60-year extended searches involving revenue archives and field inspections require 10 to 14 business days.
+              </div>
+</div>
+<!-- FAQ 4 -->
+<div class="reveal-item stagger-4 bg-white border border-[#E4DED3] shadow-sm rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none group" onclick="toggleFaq(this)" type="button">
+<div class="flex items-start md:items-center gap-3.5">
+<span class="text-[11px] font-bold text-[#A98A50] bg-[#FAF9F5] px-2.5 py-1 border border-[#E4DED3] shrink-0 rounded-lg">04</span>
+<span class="text-base md:text-lg text-[#181c24] font-semibold group-hover:text-[#A98A50] transition-colors">What is the difference between a 15-year, 30-year, and 60-year search?</span>
+</div>
+<span class="faq-indicator shrink-0 w-8 h-8 rounded-full bg-[#FAF9F5] border border-[#E4DED3] flex items-center justify-center text-[#151922] font-bold text-base group-hover:border-[#A98A50] group-hover:text-[#A98A50] transition-all">+</span>
+</button>
+<div class="hidden px-6 pb-6 pt-1 border-t border-[#E4DED3]/60 text-[#45474b] text-xs md:text-sm leading-relaxed bg-[#FAF9F5]/40">
+                A 15-year search verifies recent transactions for resale apartments with prior verified root titles. A 30-year search is the statutory benchmark that verifies continuous, uninterrupted ownership and eliminates claims under limitation laws. A 60-year search traces ancestral land back to original Inam or grant records, critical for agricultural conversions and institutional land banking.
+              </div>
+</div>
+<!-- FAQ 5 -->
+<div class="reveal-item stagger-5 bg-white border border-[#E4DED3] shadow-sm rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none group" onclick="toggleFaq(this)" type="button">
+<div class="flex items-start md:items-center gap-3.5">
+<span class="text-[11px] font-bold text-[#A98A50] bg-[#FAF9F5] px-2.5 py-1 border border-[#E4DED3] shrink-0 rounded-lg">05</span>
+<span class="text-base md:text-lg text-[#181c24] font-semibold group-hover:text-[#A98A50] transition-colors">Why are Pahanis (ROR) essential alongside registered sale deeds?</span>
+</div>
+<span class="faq-indicator shrink-0 w-8 h-8 rounded-full bg-[#FAF9F5] border border-[#E4DED3] flex items-center justify-center text-[#151922] font-bold text-base group-hover:border-[#A98A50] group-hover:text-[#A98A50] transition-all">+</span>
+</button>
+<div class="hidden px-6 pb-6 pt-1 border-t border-[#E4DED3]/60 text-[#45474b] text-xs md:text-sm leading-relaxed bg-[#FAF9F5]/40">
+                A registered sale deed confirms the conveyance transaction, but Pahanis (Record of Rights) confirm sovereign revenue recognition, actual possession, nature of cultivation, tenancy rights, and mutation entries. Discrepancies between registered deeds and Pahanis are the primary genesis of title disputes.
+              </div>
+</div>
+<!-- FAQ 6 -->
+<div class="reveal-item stagger-6 bg-white border border-[#E4DED3] shadow-sm rounded-2xl overflow-hidden">
+<button class="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none group" onclick="toggleFaq(this)" type="button">
+<div class="flex items-start md:items-center gap-3.5">
+<span class="text-[11px] font-bold text-[#A98A50] bg-[#FAF9F5] px-2.5 py-1 border border-[#E4DED3] shrink-0 rounded-lg">06</span>
+<span class="text-base md:text-lg text-[#181c24] font-semibold group-hover:text-[#A98A50] transition-colors">Can RIVORA investigate pending litigation across civil and revenue courts?</span>
+</div>
+<span class="faq-indicator shrink-0 w-8 h-8 rounded-full bg-[#FAF9F5] border border-[#E4DED3] flex items-center justify-center text-[#151922] font-bold text-base group-hover:border-[#A98A50] group-hover:text-[#A98A50] transition-all">+</span>
+</button>
+<div class="hidden px-6 pb-6 pt-1 border-t border-[#E4DED3]/60 text-[#45474b] text-xs md:text-sm leading-relaxed bg-[#FAF9F5]/40">
+                Yes. We cross-examine jurisdictional civil courts, high courts, and revenue appellate bodies (Tahsildar, RDO, Joint Collector) for pending suits, injunctions, partition claims, or lis pendens affecting the subject property.
+              </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 09: CONSULTATION -->
+<section class="w-full bg-[#FBFAF7] py-20 lg:py-24 border-t border-[#E4DED3]" id="contact">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="max-w-4xl mx-auto space-y-10">
+<div class="reveal-item text-center space-y-3">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[#FAF9F5] border border-[#A98A50] rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+<span class="text-xs uppercase tracking-widest text-[#A98A50] font-bold">Personal Legal Counsel // Direct Access</span>
+</div>
+<h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Request a consultation</h2>
+<p class="text-base text-[#45474b] max-w-2xl mx-auto leading-relaxed">
+              Speak directly with Senior Advocate RK.V and our property law associates to discuss your survey numbers, documentation state, and title verification timeline.
+            </p>
+</div>
+<div class="reveal-item stagger-1 bg-white border-2 border-[#A98A50] rounded-3xl p-8 sm:p-12 shadow-lg space-y-8">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-[#E4DED3] gap-4">
+<div>
+<span class="text-xs uppercase font-bold text-[#A98A50] block">Principal Legal Counsel</span>
+<h3 class="text-2xl font-bold text-[#181c24] mt-1">Advocate RK.V &amp; Associates</h3>
+<p class="text-xs text-[#45474b] mt-1">Practicing Counsel &amp; Title Examination Specialists</p>
+</div>
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-[#FAF9F5] border border-[#E4DED3] rounded-full self-start sm:self-auto">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
+<span class="text-xs uppercase font-bold tracking-wider text-[#181c24]">Consultations Active</span>
+</div>
+</div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6 py-2">
+<div>
+<span class="text-xs uppercase font-bold text-[#76777c] block mb-1">Direct Counsel Line &amp; Dossier Desk</span>
+<div class="text-4xl sm:text-5xl font-bold text-[#181c24] tracking-tight leading-none">
+                  8099888851
+                </div>
+<span class="text-xs text-[#45474b] block mt-2">Direct line to chambers for prospective purchasers and developers</span>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center justify-center gap-2 py-3 px-5 bg-[#151922] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#262C3B] shadow-sm transition-all" href="tel:8099888851">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                  Call Chambers
+                </a>
+<button class="inline-flex items-center justify-center gap-2 py-3 px-5 bg-white text-[#181c24] border border-[#E4DED3] text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#F5F2EB] shadow-sm transition-all" onclick="copyContactNumber('8099888851')" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+                  Copy Number
+                </button>
+<a class="inline-flex items-center justify-center gap-2 py-3 px-5 bg-[#A98A50] text-white text-xs font-semibold uppercase tracking-wider rounded-xl hover:bg-[#8F733E] shadow-sm transition-all" href="https://wa.me/918099888851" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                  WhatsApp Desk
+                </a>
+</div>
+</div>
+<div class="hidden text-center py-2.5 px-4 bg-[#151922] text-white text-xs font-semibold uppercase tracking-wider rounded-xl transition-all" id="copy-toast">
+              Telephone Number Copied to Clipboard
+            </div>
+<div class="pt-6 border-t border-[#E4DED3] flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="text-xs uppercase font-bold text-[#A98A50]">Service Jurisdictions:</span>
+<span class="text-xs font-semibold text-[#181c24]">Telangana  |  Andhra Pradesh  |  New Delhi</span>
+</div>
+<div class="inline-flex items-center gap-2 text-[#45474b] text-xs">
+<span class="material-symbols-outlined text-[#A98A50] text-[18px]">verified_user</span>
+<span>Senior Advocate Direct Scrutiny</span>
+</div>
+</div>
+</div>
+<div class="reveal-item stagger-2 p-6 bg-[#FAF9F5] border border-[#E4DED3] rounded-2xl flex items-center justify-center gap-3 text-center text-[#45474b] text-xs">
+<span class="material-symbols-outlined text-[#A98A50] text-xl shrink-0">encrypted</span>
+<span>All consultations, deed abstracts, survey records, and transactions are held under strict professional privilege and confidentiality pursuant to the Advocates Act.</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- FOOTER -->
+<footer class="w-full bg-[#151922] text-[#FBFAF7] py-16 border-t border-[#262C3B]">
+<div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+<div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 pb-12">
+<div class="space-y-4 max-w-md">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-xl border border-[#A98A50] flex items-center justify-center bg-[#FBFAF7] text-[#151922] font-bold text-sm tracking-widest shrink-0">R</div>
+<div class="flex flex-col">
+<span class="text-xl tracking-[0.2em] font-bold text-[#FBFAF7] uppercase leading-none">RIVORA</span>
+<span class="text-[9.5px] uppercase tracking-[0.28em] text-[#A98A50] font-medium mt-1">ADVOCATES &amp; ASSOCIATES</span>
+</div>
+</div>
+<p class="text-xs text-[#A0A5B2] leading-relaxed">Dedicated legal practice for deed examination, revenue record verification, and certified title opinions for property buyers and institutional acquisitions.</p>
+<div class="pt-2 space-y-1">
+<span class="text-xs uppercase font-bold text-[#A98A50] tracking-widest block">Direct Practice Line</span>
+<p class="text-xl font-semibold text-[#FBFAF7]">8099888851</p>
+</div>
+</div>
+<div class="flex flex-col gap-6">
+<div class="flex flex-wrap gap-x-8 gap-y-3">
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#pillars">Pillars</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#services">Practice Areas</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#search-depth">Search Depth</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#process">Verification Flow</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#expertise">Counsel Practice</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#reviews">Testimonials</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#faq">FAQ</a>
+<a class="text-xs font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors" href="#contact">Contact</a>
+</div>
+<div class="pt-3 border-t border-[#262C3B]">
+<span class="text-xs uppercase font-bold text-[#A98A50] tracking-widest block mb-1">Service Jurisdictions</span>
+<p class="text-xs text-[#EDE8DD]">Telangana  |  Andhra Pradesh  |  New Delhi</p>
+</div>
+</div>
+</div>
+<div class="pt-6 border-t border-[#262C3B] flex flex-col md:flex-row items-center justify-between gap-4">
+<p class="text-xs text-[#A0A5B2]">© 2026 RIVORA. All rights reserved.</p>
+<span class="text-xs uppercase tracking-[0.25em] text-[#A98A50] font-medium">Advocates &amp; Associates</span>
+</div>
+</div>
+</footer>
+<script>
+    // SCROLL REVEAL INTERSECTION OBSERVER SETUP
+    document.addEventListener('DOMContentLoaded', () => {
+      const revealItems = document.querySelectorAll('.reveal-item');
+      
+      if (!('IntersectionObserver' in window)) {
+        // Fallback for older browsers
+        revealItems.forEach(item => item.classList.add('is-revealed'));
+        return;
+      }
+
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -50px 0px',
+        threshold: 0.08
+      };
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealItems.forEach(item => {
+        // Check if item is already in the viewport on load
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          item.classList.add('is-revealed');
+        } else {
+          revealObserver.observe(item);
+        }
+      });
+    });
+
+    let currentPracticeIndex = 0;
+    const totalPracticeSlides = 6;
+
+    function updatePracticeSlides() {
+      const slides = document.querySelectorAll('.practice-slide');
+      const tabs = document.querySelectorAll('.practice-tab-btn');
+      const counter = document.getElementById('slider-counter');
+
+      slides.forEach((slide, idx) => {
+        if (idx === currentPracticeIndex) {
+          slide.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+          slide.classList.add('opacity-100', 'z-10');
+        } else {
+          slide.classList.remove('opacity-100', 'z-10');
+          slide.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+        }
+      });
+
+      tabs.forEach((tab, idx) => {
+        const titleSpan = tab.querySelector('span:first-child');
+        if (idx === currentPracticeIndex) {
+          tab.className = 'practice-tab-btn py-3 px-3.5 border border-[#A98A50] bg-[#151922] text-white text-left rounded-xl transition-all';
+          if (titleSpan) titleSpan.className = 'text-[10px] tracking-widest block font-bold text-[#A98A50]';
+        } else {
+          tab.className = 'practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#F5F2EB] text-[#151922] text-left rounded-xl transition-all';
+          if (titleSpan) titleSpan.className = 'text-[10px] tracking-widest block font-bold text-[#76777c]';
+        }
+      });
+
+      if (counter) {
+        counter.textContent = `0${currentPracticeIndex + 1} / 0${totalPracticeSlides}`;
+      }
+    }
+
+    function movePracticeSlide(direction) {
+      currentPracticeIndex = (currentPracticeIndex + direction + totalPracticeSlides) % totalPracticeSlides;
+      updatePracticeSlides();
+    }
+
+    function goToPracticeSlide(index) {
+      currentPracticeIndex = index;
+      updatePracticeSlides();
+    }
+
+    function toggleFaq(btn) {
+      const item = btn.closest('div');
+      const content = item.querySelector('div:last-child');
+      const indicator = btn.querySelector('.faq-indicator');
+      const isHidden = content.classList.contains('hidden');
+
+      document.querySelectorAll('#faq-accordion > div').forEach(other => {
+        const otherContent = other.querySelector('div:last-child');
+        const otherIndicator = other.querySelector('.faq-indicator');
+        if (otherContent && otherIndicator) {
+          otherContent.classList.add('hidden');
+          otherIndicator.textContent = '+';
+          otherIndicator.classList.remove('rotate-45');
+        }
+      });
+
+      if (isHidden) {
+        content.classList.remove('hidden');
+        indicator.textContent = '−';
+      } else {
+        content.classList.add('hidden');
+        indicator.textContent = '+';
+      }
+    }
+
+    function copyContactNumber(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        const toast = document.getElementById('copy-toast');
+        if (toast) {
+          toast.classList.remove('hidden');
+          setTimeout(() => toast.classList.add('hidden'), 3000);
+        }
+      }).catch(() => {
+        alert('Telephone: ' + text);
+      });
+    }
+  </script>
+</body></html>

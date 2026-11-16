@@ -1,0 +1,3104 @@
+{
+  "360": [
+    {
+      "name": "Hero / eyebrow label",
+      "selector": "#hero .stagger-1 span:last-child",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "LEGAL SERVICES",
+      "box": {
+        "x": 59,
+        "y": 87,
+        "width": 105.34375,
+        "height": 16.5
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        24,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011520727746706297,
+        "rgb": [
+          24,
+          28,
+          36
+        ],
+        "x": 59,
+        "y": 87,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        24,
+        28,
+        36
+      ],
+      "cr": 13.97,
+      "crBrightestPixel": 13.97,
+      "pass": true
+    },
+    {
+      "name": "Hero / H1 headline",
+      "selector": "#hero h1",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "End-to-end land & property title verification.",
+      "box": {
+        "x": 24,
+        "y": 134.5,
+        "width": 312,
+        "height": 118.78125
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        59,
+        58,
+        62
+      ],
+      "bgRegion": {
+        "lum": 0.04303719380521705,
+        "rgb": [
+          59,
+          58,
+          62
+        ],
+        "x": 24,
+        "y": 163,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        58,
+        62
+      ],
+      "cr": 10.81,
+      "crBrightestPixel": 10.81,
+      "pass": true
+    },
+    {
+      "name": "Hero / body paragraph",
+      "selector": "#hero p",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Comprehensive title scrutiny across plotted developments, agricultural land, and instituti",
+      "box": {
+        "x": 24,
+        "y": 277.28125,
+        "width": 312,
+        "height": 292.5
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        59,
+        59,
+        60
+      ],
+      "bgRegion": {
+        "lum": 0.04383980410126575,
+        "rgb": [
+          59,
+          59,
+          60
+        ],
+        "x": 280,
+        "y": 473,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        62,
+        69
+      ],
+      "cr": 9.16,
+      "crBrightestPixel": 8.76,
+      "pass": true
+    },
+    {
+      "name": "Hero / primary CTA",
+      "selector": "#hero a[href=\"#contact\"]",
+      "index": 0,
+      "color": "rgb(21, 25, 34)",
+      "text": "Request a consultationarrow_forward",
+      "box": {
+        "x": 24,
+        "y": 605.78125,
+        "width": 289.671875,
+        "height": 54
+      },
+      "fg": [
+        21,
+        25,
+        34
+      ],
+      "bg": [
+        169,
+        138,
+        80
+      ],
+      "bgRegion": {
+        "lum": 0.27191161094438016,
+        "rgb": [
+          169,
+          138,
+          80
+        ],
+        "x": 52,
+        "y": 606,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        169,
+        138,
+        80
+      ],
+      "cr": 5.39,
+      "crBrightestPixel": 5.39,
+      "pass": true
+    },
+    {
+      "name": "Hero / secondary CTA",
+      "selector": "#hero a[href=\"#services\"]",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Our practice areas",
+      "box": {
+        "x": 24,
+        "y": 675.78125,
+        "width": 217.78125,
+        "height": 50
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        89,
+        87,
+        89
+      ],
+      "bgRegion": {
+        "lum": 0.09661505793924399,
+        "rgb": [
+          89,
+          87,
+          89
+        ],
+        "x": 240,
+        "y": 704,
+        "w": 2,
+        "h": 4
+      },
+      "brightestPixel": [
+        132,
+        131,
+        129
+      ],
+      "cr": 6.86,
+      "crBrightestPixel": 3.63,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 1",
+      "selector": "#hero .stagger-5 > div:nth-child(1) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Human Scrutiny",
+      "box": {
+        "x": 24,
+        "y": 782.78125,
+        "width": 312,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        54,
+        46,
+        45
+      ],
+      "bgRegion": {
+        "lum": 0.029277215076348395,
+        "rgb": [
+          54,
+          46,
+          45
+        ],
+        "x": 312,
+        "y": 783,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        55,
+        46,
+        44
+      ],
+      "cr": 8.62,
+      "crBrightestPixel": 8.6,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 1",
+      "selector": "#hero .stagger-5 > div:nth-child(1) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Advocate RK.V & Team",
+      "box": {
+        "x": 24,
+        "y": 803.28125,
+        "width": 312,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        51,
+        42,
+        41
+      ],
+      "bgRegion": {
+        "lum": 0.0251983153456373,
+        "rgb": [
+          51,
+          42,
+          41
+        ],
+        "x": 308,
+        "y": 803,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        52,
+        43,
+        41
+      ],
+      "cr": 13.38,
+      "crBrightestPixel": 13.21,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 2",
+      "selector": "#hero .stagger-5 > div:nth-child(2) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Field Verification",
+      "box": {
+        "x": 24,
+        "y": 847.28125,
+        "width": 312,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        68,
+        68,
+        72
+      ],
+      "bgRegion": {
+        "lum": 0.05831067398649997,
+        "rgb": [
+          68,
+          68,
+          72
+        ],
+        "x": 112,
+        "y": 863,
+        "w": 4,
+        "h": 1
+      },
+      "brightestPixel": [
+        67,
+        69,
+        73
+      ],
+      "cr": 6.31,
+      "crBrightestPixel": 6.25,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 2",
+      "selector": "#hero .stagger-5 > div:nth-child(2) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Revenue Archives & Taluk",
+      "box": {
+        "x": 24,
+        "y": 867.78125,
+        "width": 312,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        55,
+        56,
+        61
+      ],
+      "bgRegion": {
+        "lum": 0.03977493610461273,
+        "rgb": [
+          55,
+          56,
+          61
+        ],
+        "x": 160,
+        "y": 872,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        69,
+        69,
+        73
+      ],
+      "cr": 11.21,
+      "crBrightestPixel": 9.14,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 3",
+      "selector": "#hero .stagger-5 > div:nth-child(3) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Certified Deliverable",
+      "box": {
+        "x": 24,
+        "y": 911.78125,
+        "width": 312,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        55,
+        49,
+        50
+      ],
+      "bgRegion": {
+        "lum": 0.03239139794687915,
+        "rgb": [
+          55,
+          49,
+          50
+        ],
+        "x": 188,
+        "y": 928,
+        "w": 4,
+        "h": 1
+      },
+      "brightestPixel": [
+        55,
+        49,
+        50
+      ],
+      "cr": 8.29,
+      "crBrightestPixel": 8.29,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 3",
+      "selector": "#hero .stagger-5 > div:nth-child(3) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Signed Written Legal Opinion",
+      "box": {
+        "x": 24,
+        "y": 932.28125,
+        "width": 312,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        55,
+        49,
+        49
+      ],
+      "bgRegion": {
+        "lum": 0.03230601499652985,
+        "rgb": [
+          55,
+          49,
+          49
+        ],
+        "x": 184,
+        "y": 932,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        56,
+        49,
+        50
+      ],
+      "cr": 12.22,
+      "crBrightestPixel": 12.17,
+      "pass": true
+    },
+    {
+      "name": "Services / eyebrow",
+      "selector": "#services span.block.mb-2",
+      "index": 0,
+      "color": "rgb(119, 89, 42)",
+      "text": "Practice Areas // Scrutiny Specialization",
+      "box": {
+        "x": 24,
+        "y": 2267.28125,
+        "width": 312,
+        "height": 32
+      },
+      "fg": [
+        119,
+        89,
+        42
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 24,
+        "y": 80,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 6.2,
+      "crBrightestPixel": 6.2,
+      "pass": true
+    },
+    {
+      "name": "Services / H2 headline",
+      "selector": "#services h2",
+      "index": 0,
+      "color": "rgb(24, 28, 36)",
+      "text": "Comprehensive property legal scrutiny",
+      "box": {
+        "x": 24,
+        "y": 2307.28125,
+        "width": 312,
+        "height": 72
+      },
+      "fg": [
+        24,
+        28,
+        36
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 24,
+        "y": 120,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 16.35,
+      "crBrightestPixel": 16.35,
+      "pass": true
+    },
+    {
+      "name": "Services / slide counter",
+      "selector": "#slider-counter",
+      "index": 0,
+      "color": "rgb(92, 99, 112)",
+      "text": "01 / 06",
+      "box": {
+        "x": 24,
+        "y": 2417.28125,
+        "width": 48.0625,
+        "height": 16
+      },
+      "fg": [
+        92,
+        99,
+        112
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 24,
+        "y": 230,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 5.79,
+      "crBrightestPixel": 5.79,
+      "pass": true
+    },
+    {
+      "name": "Services / active tab category",
+      "selector": "#tab-0 span:first-child",
+      "index": 0,
+      "color": "rgb(169, 138, 80)",
+      "text": "01 // TITLE",
+      "box": {
+        "x": 39,
+        "y": 2517.28125,
+        "width": 120,
+        "height": 15
+      },
+      "fg": [
+        169,
+        138,
+        80
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 39,
+        "y": 330,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 5.39,
+      "crBrightestPixel": 5.39,
+      "pass": true
+    },
+    {
+      "name": "Services / active tab name",
+      "selector": "#tab-0 span:last-child",
+      "index": 0,
+      "color": "rgb(255, 255, 255)",
+      "text": "Due Diligence",
+      "box": {
+        "x": 39,
+        "y": 2532.28125,
+        "width": 120,
+        "height": 16
+      },
+      "fg": [
+        255,
+        255,
+        255
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 39,
+        "y": 345,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 17.59,
+      "crBrightestPixel": 17.59,
+      "pass": true
+    },
+    {
+      "name": "Services / slide badge",
+      "selector": "#slide-0 .space-y-4 > div:first-child span:last-child",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "PRACTICE 01 // CORE DUE DILIGENCE",
+      "box": {
+        "x": 86.4375,
+        "y": 2759.28125,
+        "width": 203.5625,
+        "height": 32
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 86,
+        "y": 572,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    },
+    {
+      "name": "Services / slide H3",
+      "selector": "#slide-0 h3",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "End-to-end title due diligence",
+      "box": {
+        "x": 53,
+        "y": 2814.28125,
+        "width": 254,
+        "height": 64
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        60,
+        58,
+        53
+      ],
+      "bgRegion": {
+        "lum": 0.04243812286237416,
+        "rgb": [
+          60,
+          58,
+          53
+        ],
+        "x": 241,
+        "y": 663,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        65,
+        62,
+        55
+      ],
+      "cr": 10.88,
+      "crBrightestPixel": 10.22,
+      "pass": true
+    },
+    {
+      "name": "Services / slide body",
+      "selector": "#slide-0 p",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Complete chain-of-title examination from root Pahanis to registered deeds, Section 22-A pr",
+      "box": {
+        "x": 53,
+        "y": 2894.28125,
+        "width": 254,
+        "height": 91
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        37,
+        37,
+        39
+      ],
+      "bgRegion": {
+        "lum": 0.018629338487800986,
+        "rgb": [
+          37,
+          37,
+          39
+        ],
+        "x": 265,
+        "y": 775,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        48,
+        44,
+        42
+      ],
+      "cr": 12.52,
+      "crBrightestPixel": 11.31,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 1",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Root Pahanis & ROR",
+      "box": {
+        "x": 53,
+        "y": 3009.28125,
+        "width": 162.40625,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        45,
+        48,
+        56
+      ],
+      "bgRegion": {
+        "lum": 0.02957316995174605,
+        "rgb": [
+          45,
+          48,
+          56
+        ],
+        "x": 213,
+        "y": 838,
+        "w": 2,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 12.64,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 2",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 1,
+      "color": "rgb(251, 250, 247)",
+      "text": "Section 22-A Ledger",
+      "box": {
+        "x": 53,
+        "y": 3047.28125,
+        "width": 168.71875,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        62,
+        65,
+        72
+      ],
+      "bgRegion": {
+        "lum": 0.052726060436843,
+        "rgb": [
+          62,
+          65,
+          72
+        ],
+        "x": 221,
+        "y": 872,
+        "w": 1,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 9.79,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 3",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 2,
+      "color": "rgb(251, 250, 247)",
+      "text": "Certified Title Opinion",
+      "box": {
+        "x": 53,
+        "y": 3085.28125,
+        "width": 184.625,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        62,
+        65,
+        72
+      ],
+      "bgRegion": {
+        "lum": 0.052726060436843,
+        "rgb": [
+          62,
+          65,
+          72
+        ],
+        "x": 237,
+        "y": 910,
+        "w": 1,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 9.79,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / report line",
+      "selector": "#slide-0 .border-t > span",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Advocate-Signed Legal Report",
+      "box": {
+        "x": 53,
+        "y": 3198.28125,
+        "width": 254,
+        "height": 16
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        35,
+        36,
+        41
+      ],
+      "bgRegion": {
+        "lum": 0.01779172841723872,
+        "rgb": [
+          35,
+          36,
+          41
+        ],
+        "x": 305,
+        "y": 1011,
+        "w": 2,
+        "h": 4
+      },
+      "brightestPixel": [
+        57,
+        54,
+        51
+      ],
+      "cr": 12.68,
+      "crBrightestPixel": 9.82,
+      "pass": true
+    },
+    {
+      "name": "Services / CTA link",
+      "selector": "#slide-0 .border-t a",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Initiate Scrutiny arrow_forward",
+      "box": {
+        "x": 53,
+        "y": 3230.28125,
+        "width": 254,
+        "height": 24
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 53,
+        "y": 1043,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    }
+  ],
+  "768": [
+    {
+      "name": "Hero / eyebrow label",
+      "selector": "#hero .stagger-1 span:last-child",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "LEGAL SERVICES",
+      "box": {
+        "x": 75,
+        "y": 87,
+        "width": 105.34375,
+        "height": 16.5
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        24,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011520727746706297,
+        "rgb": [
+          24,
+          28,
+          36
+        ],
+        "x": 123,
+        "y": 87,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        24,
+        28,
+        36
+      ],
+      "cr": 13.97,
+      "crBrightestPixel": 13.97,
+      "pass": true
+    },
+    {
+      "name": "Hero / H1 headline",
+      "selector": "#hero h1",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "End-to-end land & property title verification.",
+      "box": {
+        "x": 40,
+        "y": 134.5,
+        "width": 688,
+        "height": 105.59375
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        59,
+        62,
+        70
+      ],
+      "bgRegion": {
+        "lum": 0.04817252102262667,
+        "rgb": [
+          59,
+          62,
+          70
+        ],
+        "x": 252,
+        "y": 219,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        62,
+        70
+      ],
+      "cr": 10.25,
+      "crBrightestPixel": 10.25,
+      "pass": true
+    },
+    {
+      "name": "Hero / body paragraph",
+      "selector": "#hero p",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Comprehensive title scrutiny across plotted developments, agricultural land, and instituti",
+      "box": {
+        "x": 40,
+        "y": 264.09375,
+        "width": 672,
+        "height": 162.5
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        59,
+        59,
+        58
+      ],
+      "bgRegion": {
+        "lum": 0.043632243991442436,
+        "rgb": [
+          59,
+          59,
+          58
+        ],
+        "x": 648,
+        "y": 316,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        62,
+        70
+      ],
+      "cr": 9.18,
+      "crBrightestPixel": 8.75,
+      "pass": true
+    },
+    {
+      "name": "Hero / primary CTA",
+      "selector": "#hero a[href=\"#contact\"]",
+      "index": 0,
+      "color": "rgb(21, 25, 34)",
+      "text": "Request a consultationarrow_forward",
+      "box": {
+        "x": 40,
+        "y": 462.59375,
+        "width": 289.671875,
+        "height": 54
+      },
+      "fg": [
+        21,
+        25,
+        34
+      ],
+      "bg": [
+        169,
+        138,
+        80
+      ],
+      "bgRegion": {
+        "lum": 0.27191161094438016,
+        "rgb": [
+          169,
+          138,
+          80
+        ],
+        "x": 68,
+        "y": 463,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        169,
+        138,
+        80
+      ],
+      "cr": 5.39,
+      "crBrightestPixel": 5.39,
+      "pass": true
+    },
+    {
+      "name": "Hero / secondary CTA",
+      "selector": "#hero a[href=\"#services\"]",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Our practice areas",
+      "box": {
+        "x": 345.671875,
+        "y": 464.59375,
+        "width": 217.78125,
+        "height": 50
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        88,
+        84,
+        84
+      ],
+      "bgRegion": {
+        "lum": 0.09055447864377757,
+        "rgb": [
+          88,
+          84,
+          84
+        ],
+        "x": 562,
+        "y": 489,
+        "w": 2,
+        "h": 4
+      },
+      "brightestPixel": [
+        132,
+        131,
+        129
+      ],
+      "cr": 7.16,
+      "crBrightestPixel": 3.63,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 1",
+      "selector": "#hero .stagger-5 > div:nth-child(1) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Human Scrutiny",
+      "box": {
+        "x": 40,
+        "y": 573.59375,
+        "width": 208,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        59,
+        55,
+        57
+      ],
+      "bgRegion": {
+        "lum": 0.039575911001699174,
+        "rgb": [
+          59,
+          55,
+          57
+        ],
+        "x": 104,
+        "y": 590,
+        "w": 4,
+        "h": 1
+      },
+      "brightestPixel": [
+        59,
+        57,
+        58
+      ],
+      "cr": 7.63,
+      "crBrightestPixel": 7.46,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 1",
+      "selector": "#hero .stagger-5 > div:nth-child(1) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Advocate RK.V & Team",
+      "box": {
+        "x": 40,
+        "y": 594.09375,
+        "width": 208,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        59,
+        56,
+        56
+      ],
+      "bgRegion": {
+        "lum": 0.04043677287693199,
+        "rgb": [
+          59,
+          56,
+          56
+        ],
+        "x": 40,
+        "y": 610,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        57,
+        57
+      ],
+      "cr": 11.12,
+      "crBrightestPixel": 10.99,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 2",
+      "selector": "#hero .stagger-5 > div:nth-child(2) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Field Verification",
+      "box": {
+        "x": 272,
+        "y": 573.59375,
+        "width": 208,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        58,
+        54,
+        55
+      ],
+      "bgRegion": {
+        "lum": 0.0381370964540349,
+        "rgb": [
+          58,
+          54,
+          55
+        ],
+        "x": 292,
+        "y": 578,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        56,
+        57
+      ],
+      "cr": 7.75,
+      "crBrightestPixel": 7.55,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 2",
+      "selector": "#hero .stagger-5 > div:nth-child(2) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Revenue Archives & Taluk",
+      "box": {
+        "x": 272,
+        "y": 594.09375,
+        "width": 208,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        58,
+        56,
+        58
+      ],
+      "bgRegion": {
+        "lum": 0.04033375721472592,
+        "rgb": [
+          58,
+          56,
+          58
+        ],
+        "x": 412,
+        "y": 606,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        59,
+        62,
+        67
+      ],
+      "cr": 11.14,
+      "crBrightestPixel": 10.29,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 3",
+      "selector": "#hero .stagger-5 > div:nth-child(3) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Certified Deliverable",
+      "box": {
+        "x": 504,
+        "y": 573.59375,
+        "width": 208,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        57,
+        53,
+        52
+      ],
+      "bgRegion": {
+        "lum": 0.03663996531259839,
+        "rgb": [
+          57,
+          53,
+          52
+        ],
+        "x": 516,
+        "y": 586,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        58,
+        60,
+        63
+      ],
+      "cr": 7.89,
+      "crBrightestPixel": 7.2,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 3",
+      "selector": "#hero .stagger-5 > div:nth-child(3) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Signed Written Legal Opinion",
+      "box": {
+        "x": 504,
+        "y": 594.09375,
+        "width": 208,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        47,
+        43,
+        46
+      ],
+      "bgRegion": {
+        "lum": 0.025293483102151668,
+        "rgb": [
+          47,
+          43,
+          46
+        ],
+        "x": 708,
+        "y": 606,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        58,
+        58,
+        58
+      ],
+      "cr": 13.36,
+      "crBrightestPixel": 10.9,
+      "pass": true
+    },
+    {
+      "name": "Services / eyebrow",
+      "selector": "#services span.block.mb-2",
+      "index": 0,
+      "color": "rgb(119, 89, 42)",
+      "text": "Practice Areas // Scrutiny Specialization",
+      "box": {
+        "x": 40,
+        "y": 1432.921875,
+        "width": 501.203125,
+        "height": 16
+      },
+      "fg": [
+        119,
+        89,
+        42
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 40,
+        "y": 80,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 6.2,
+      "crBrightestPixel": 6.2,
+      "pass": true
+    },
+    {
+      "name": "Services / H2 headline",
+      "selector": "#services h2",
+      "index": 0,
+      "color": "rgb(24, 28, 36)",
+      "text": "Comprehensive property legal scrutiny",
+      "box": {
+        "x": 40,
+        "y": 1456.921875,
+        "width": 501.203125,
+        "height": 72
+      },
+      "fg": [
+        24,
+        28,
+        36
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 40,
+        "y": 104,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 16.35,
+      "crBrightestPixel": 16.35,
+      "pass": true
+    },
+    {
+      "name": "Services / slide counter",
+      "selector": "#slider-counter",
+      "index": 0,
+      "color": "rgb(92, 99, 112)",
+      "text": "01 / 06",
+      "box": {
+        "x": 565.203125,
+        "y": 1490.921875,
+        "width": 42.796875,
+        "height": 32
+      },
+      "fg": [
+        92,
+        99,
+        112
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 565,
+        "y": 138,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 5.79,
+      "crBrightestPixel": 5.79,
+      "pass": true
+    },
+    {
+      "name": "Services / active tab category",
+      "selector": "#tab-0 span:first-child",
+      "index": 0,
+      "color": "rgb(169, 138, 80)",
+      "text": "01 // TITLE",
+      "box": {
+        "x": 55,
+        "y": 1606.421875,
+        "width": 74.65625,
+        "height": 15
+      },
+      "fg": [
+        169,
+        138,
+        80
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 55,
+        "y": 254,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 5.39,
+      "crBrightestPixel": 5.39,
+      "pass": true
+    },
+    {
+      "name": "Services / active tab name",
+      "selector": "#tab-0 span:last-child",
+      "index": 0,
+      "color": "rgb(255, 255, 255)",
+      "text": "Due Diligence",
+      "box": {
+        "x": 55,
+        "y": 1621.421875,
+        "width": 74.65625,
+        "height": 16
+      },
+      "fg": [
+        255,
+        255,
+        255
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 55,
+        "y": 269,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 17.59,
+      "crBrightestPixel": 17.59,
+      "pass": true
+    },
+    {
+      "name": "Services / slide badge",
+      "selector": "#slide-0 .space-y-4 > div:first-child span:last-child",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "PRACTICE 01 // CORE DUE DILIGENCE",
+      "box": {
+        "x": 132,
+        "y": 1745.921875,
+        "width": 252.9375,
+        "height": 16
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 132,
+        "y": 393,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    },
+    {
+      "name": "Services / slide H3",
+      "selector": "#slide-0 h3",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "End-to-end title due diligence",
+      "box": {
+        "x": 97,
+        "y": 1784.921875,
+        "width": 574,
+        "height": 40
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        54,
+        52,
+        49
+      ],
+      "bgRegion": {
+        "lum": 0.0346200376223655,
+        "rgb": [
+          54,
+          52,
+          49
+        ],
+        "x": 441,
+        "y": 444,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        73,
+        63,
+        50
+      ],
+      "cr": 11.89,
+      "crBrightestPixel": 9.86,
+      "pass": true
+    },
+    {
+      "name": "Services / slide body",
+      "selector": "#slide-0 p",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Complete chain-of-title examination from root Pahanis to registered deeds, Section 22-A pr",
+      "box": {
+        "x": 97,
+        "y": 1840.921875,
+        "width": 574,
+        "height": 52
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        49,
+        46,
+        44
+      ],
+      "bgRegion": {
+        "lum": 0.02788807110299632,
+        "rgb": [
+          49,
+          46,
+          44
+        ],
+        "x": 621,
+        "y": 500,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        78,
+        67,
+        51
+      ],
+      "cr": 11.03,
+      "crBrightestPixel": 7.9,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 1",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Root Pahanis & ROR",
+      "box": {
+        "x": 97,
+        "y": 1916.921875,
+        "width": 162.40625,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        45,
+        48,
+        56
+      ],
+      "bgRegion": {
+        "lum": 0.02957316995174605,
+        "rgb": [
+          45,
+          48,
+          56
+        ],
+        "x": 257,
+        "y": 580,
+        "w": 2,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 12.64,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 2",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 1,
+      "color": "rgb(251, 250, 247)",
+      "text": "Section 22-A Ledger",
+      "box": {
+        "x": 267.40625,
+        "y": 1916.921875,
+        "width": 168.71875,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        57,
+        60,
+        68
+      ],
+      "bgRegion": {
+        "lum": 0.04518929629882719,
+        "rgb": [
+          57,
+          60,
+          68
+        ],
+        "x": 435,
+        "y": 576,
+        "w": 1,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 10.57,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 3",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 2,
+      "color": "rgb(251, 250, 247)",
+      "text": "Certified Title Opinion",
+      "box": {
+        "x": 444.125,
+        "y": 1916.921875,
+        "width": 184.625,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        60,
+        63,
+        70
+      ],
+      "bgRegion": {
+        "lum": 0.049578688159765204,
+        "rgb": [
+          60,
+          63,
+          70
+        ],
+        "x": 628,
+        "y": 576,
+        "w": 1,
+        "h": 4
+      },
+      "brightestPixel": [
+        75,
+        76,
+        80
+      ],
+      "cr": 10.1,
+      "crBrightestPixel": 8.22,
+      "pass": true
+    },
+    {
+      "name": "Services / report line",
+      "selector": "#slide-0 .border-t > span",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Advocate-Signed Legal Report",
+      "box": {
+        "x": 97,
+        "y": 2104.921875,
+        "width": 206.109375,
+        "height": 16
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 97,
+        "y": 752,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    },
+    {
+      "name": "Services / CTA link",
+      "selector": "#slide-0 .border-t a",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Initiate Scrutiny arrow_forward",
+      "box": {
+        "x": 519.1875,
+        "y": 2100.921875,
+        "width": 151.8125,
+        "height": 24
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        43,
+        44,
+        46
+      ],
+      "bgRegion": {
+        "lum": 0.025122123040382353,
+        "rgb": [
+          43,
+          44,
+          46
+        ],
+        "x": 575,
+        "y": 760,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        53,
+        52,
+        51
+      ],
+      "cr": 11.44,
+      "crBrightestPixel": 10.17,
+      "pass": true
+    }
+  ],
+  "1440": [
+    {
+      "name": "Hero / eyebrow label",
+      "selector": "#hero .stagger-1 span:last-child",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "LEGAL SERVICES",
+      "box": {
+        "x": 99,
+        "y": 119,
+        "width": 105.34375,
+        "height": 16.5
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 99,
+        "y": 119,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    },
+    {
+      "name": "Hero / H1 headline",
+      "selector": "#hero h1",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "End-to-end land & property title verification.",
+      "box": {
+        "x": 64,
+        "y": 166.5,
+        "width": 768,
+        "height": 132
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        25,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011645557668896724,
+        "rgb": [
+          25,
+          28,
+          36
+        ],
+        "x": 752,
+        "y": 167,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        25,
+        29,
+        38
+      ],
+      "cr": 16.32,
+      "crBrightestPixel": 16.16,
+      "pass": true
+    },
+    {
+      "name": "Hero / body paragraph",
+      "selector": "#hero p",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Comprehensive title scrutiny across plotted developments, agricultural land, and instituti",
+      "box": {
+        "x": 64,
+        "y": 322.5,
+        "width": 672,
+        "height": 162.5
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        24,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011520727746706297,
+        "rgb": [
+          24,
+          28,
+          36
+        ],
+        "x": 608,
+        "y": 475,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        25,
+        29,
+        37
+      ],
+      "cr": 13.97,
+      "crBrightestPixel": 13.82,
+      "pass": true
+    },
+    {
+      "name": "Hero / primary CTA",
+      "selector": "#hero a[href=\"#contact\"]",
+      "index": 0,
+      "color": "rgb(21, 25, 34)",
+      "text": "Request a consultationarrow_forward",
+      "box": {
+        "x": 64,
+        "y": 521,
+        "width": 289.671875,
+        "height": 54
+      },
+      "fg": [
+        21,
+        25,
+        34
+      ],
+      "bg": [
+        169,
+        138,
+        80
+      ],
+      "bgRegion": {
+        "lum": 0.27191161094438016,
+        "rgb": [
+          169,
+          138,
+          80
+        ],
+        "x": 92,
+        "y": 521,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        169,
+        138,
+        80
+      ],
+      "cr": 5.39,
+      "crBrightestPixel": 5.39,
+      "pass": true
+    },
+    {
+      "name": "Hero / secondary CTA",
+      "selector": "#hero a[href=\"#services\"]",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Our practice areas",
+      "box": {
+        "x": 369.671875,
+        "y": 523,
+        "width": 217.78125,
+        "height": 50
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        75,
+        77,
+        81
+      ],
+      "bgRegion": {
+        "lum": 0.07397691190535192,
+        "rgb": [
+          75,
+          77,
+          81
+        ],
+        "x": 390,
+        "y": 571,
+        "w": 4,
+        "h": 2
+      },
+      "brightestPixel": [
+        129,
+        128,
+        127
+      ],
+      "cr": 8.11,
+      "crBrightestPixel": 3.78,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 1",
+      "selector": "#hero .stagger-5 > div:nth-child(1) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Human Scrutiny",
+      "box": {
+        "x": 64,
+        "y": 632,
+        "width": 208,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        24,
+        27,
+        35
+      ],
+      "bgRegion": {
+        "lum": 0.010994052642891002,
+        "rgb": [
+          24,
+          27,
+          35
+        ],
+        "x": 224,
+        "y": 648,
+        "w": 4,
+        "h": 1
+      },
+      "brightestPixel": [
+        24,
+        27,
+        35
+      ],
+      "cr": 11.2,
+      "crBrightestPixel": 11.2,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 1",
+      "selector": "#hero .stagger-5 > div:nth-child(1) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Advocate RK.V & Team",
+      "box": {
+        "x": 64,
+        "y": 652.5,
+        "width": 208,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        23,
+        27,
+        35
+      ],
+      "bgRegion": {
+        "lum": 0.010873735269200397,
+        "rgb": [
+          23,
+          27,
+          35
+        ],
+        "x": 64,
+        "y": 661,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        24,
+        27,
+        35
+      ],
+      "cr": 16.53,
+      "crBrightestPixel": 16.49,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 2",
+      "selector": "#hero .stagger-5 > div:nth-child(2) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Field Verification",
+      "box": {
+        "x": 296,
+        "y": 632,
+        "width": 208,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        24,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011520727746706297,
+        "rgb": [
+          24,
+          28,
+          36
+        ],
+        "x": 496,
+        "y": 632,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        25,
+        28,
+        37
+      ],
+      "cr": 11.11,
+      "crBrightestPixel": 11.07,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 2",
+      "selector": "#hero .stagger-5 > div:nth-child(2) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Revenue Archives & Taluk",
+      "box": {
+        "x": 296,
+        "y": 652.5,
+        "width": 208,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        24,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011520727746706297,
+        "rgb": [
+          24,
+          28,
+          36
+        ],
+        "x": 496,
+        "y": 653,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        25,
+        28,
+        36
+      ],
+      "cr": 16.35,
+      "crBrightestPixel": 16.32,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof label 3",
+      "selector": "#hero .stagger-5 > div:nth-child(3) span:first-child",
+      "index": 0,
+      "color": "rgb(213, 208, 198)",
+      "text": "Certified Deliverable",
+      "box": {
+        "x": 528,
+        "y": 632,
+        "width": 208,
+        "height": 16.5
+      },
+      "fg": [
+        213,
+        208,
+        198
+      ],
+      "bg": [
+        25,
+        28,
+        37
+      ],
+      "bgRegion": {
+        "lum": 0.011707524448104406,
+        "rgb": [
+          25,
+          28,
+          37
+        ],
+        "x": 724,
+        "y": 648,
+        "w": 4,
+        "h": 1
+      },
+      "brightestPixel": [
+        25,
+        28,
+        37
+      ],
+      "cr": 11.07,
+      "crBrightestPixel": 11.07,
+      "pass": true
+    },
+    {
+      "name": "Hero / proof value 3",
+      "selector": "#hero .stagger-5 > div:nth-child(3) span:last-child",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Signed Written Legal Opinion",
+      "box": {
+        "x": 528,
+        "y": 652.5,
+        "width": 208,
+        "height": 20
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        24,
+        28,
+        36
+      ],
+      "bgRegion": {
+        "lum": 0.011520727746706297,
+        "rgb": [
+          24,
+          28,
+          36
+        ],
+        "x": 664,
+        "y": 653,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        25,
+        28,
+        37
+      ],
+      "cr": 16.35,
+      "crBrightestPixel": 16.3,
+      "pass": true
+    },
+    {
+      "name": "Services / eyebrow",
+      "selector": "#services span.block.mb-2",
+      "index": 0,
+      "color": "rgb(119, 89, 42)",
+      "text": "Practice Areas // Scrutiny Specialization",
+      "box": {
+        "x": 64,
+        "y": 1358.328125,
+        "width": 599.6875,
+        "height": 16
+      },
+      "fg": [
+        119,
+        89,
+        42
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 64,
+        "y": 96,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 6.2,
+      "crBrightestPixel": 6.2,
+      "pass": true
+    },
+    {
+      "name": "Services / H2 headline",
+      "selector": "#services h2",
+      "index": 0,
+      "color": "rgb(24, 28, 36)",
+      "text": "Comprehensive property legal scrutiny",
+      "box": {
+        "x": 64,
+        "y": 1382.328125,
+        "width": 599.6875,
+        "height": 40
+      },
+      "fg": [
+        24,
+        28,
+        36
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 64,
+        "y": 120,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 16.35,
+      "crBrightestPixel": 16.35,
+      "pass": true
+    },
+    {
+      "name": "Services / slide counter",
+      "selector": "#slider-counter",
+      "index": 0,
+      "color": "rgb(92, 99, 112)",
+      "text": "01 / 06",
+      "box": {
+        "x": 1207.9375,
+        "y": 1392.328125,
+        "width": 48.0625,
+        "height": 16
+      },
+      "fg": [
+        92,
+        99,
+        112
+      ],
+      "bg": [
+        251,
+        250,
+        247
+      ],
+      "bgRegion": {
+        "lum": 0.9559584425209583,
+        "rgb": [
+          251,
+          250,
+          247
+        ],
+        "x": 1208,
+        "y": 130,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        251,
+        250,
+        247
+      ],
+      "cr": 5.79,
+      "crBrightestPixel": 5.79,
+      "pass": true
+    },
+    {
+      "name": "Services / active tab category",
+      "selector": "#tab-0 span:first-child",
+      "index": 0,
+      "color": "rgb(169, 138, 80)",
+      "text": "01 // TITLE",
+      "box": {
+        "x": 79,
+        "y": 1492.328125,
+        "width": 178.65625,
+        "height": 15
+      },
+      "fg": [
+        169,
+        138,
+        80
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 79,
+        "y": 230,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 5.39,
+      "crBrightestPixel": 5.39,
+      "pass": true
+    },
+    {
+      "name": "Services / active tab name",
+      "selector": "#tab-0 span:last-child",
+      "index": 0,
+      "color": "rgb(255, 255, 255)",
+      "text": "Due Diligence",
+      "box": {
+        "x": 79,
+        "y": 1507.328125,
+        "width": 178.65625,
+        "height": 16
+      },
+      "fg": [
+        255,
+        255,
+        255
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 79,
+        "y": 245,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 17.59,
+      "crBrightestPixel": 17.59,
+      "pass": true
+    },
+    {
+      "name": "Services / slide badge",
+      "selector": "#slide-0 .space-y-4 > div:first-child span:last-child",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "PRACTICE 01 // CORE DUE DILIGENCE",
+      "box": {
+        "x": 156,
+        "y": 1624.328125,
+        "width": 252.9375,
+        "height": 16
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 156,
+        "y": 362,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    },
+    {
+      "name": "Services / slide H3",
+      "selector": "#slide-0 h3",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "End-to-end title due diligence",
+      "box": {
+        "x": 121,
+        "y": 1663.328125,
+        "width": 656,
+        "height": 40
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 121,
+        "y": 401,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        22,
+        25,
+        34
+      ],
+      "cr": 16.85,
+      "crBrightestPixel": 16.82,
+      "pass": true
+    },
+    {
+      "name": "Services / slide body",
+      "selector": "#slide-0 p",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Complete chain-of-title examination from root Pahanis to registered deeds, Section 22-A pr",
+      "box": {
+        "x": 121,
+        "y": 1719.328125,
+        "width": 656,
+        "height": 52
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 121,
+        "y": 457,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        22,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.37,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 1",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 0,
+      "color": "rgb(251, 250, 247)",
+      "text": "Root Pahanis & ROR",
+      "box": {
+        "x": 121,
+        "y": 1795.328125,
+        "width": 162.40625,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        45,
+        48,
+        56
+      ],
+      "bgRegion": {
+        "lum": 0.02957316995174605,
+        "rgb": [
+          45,
+          48,
+          56
+        ],
+        "x": 281,
+        "y": 549,
+        "w": 2,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 12.64,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 2",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 1,
+      "color": "rgb(251, 250, 247)",
+      "text": "Section 22-A Ledger",
+      "box": {
+        "x": 291.40625,
+        "y": 1795.328125,
+        "width": 168.71875,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        62,
+        65,
+        72
+      ],
+      "bgRegion": {
+        "lum": 0.052726060436843,
+        "rgb": [
+          62,
+          65,
+          72
+        ],
+        "x": 459,
+        "y": 545,
+        "w": 1,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 9.79,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / tag 3",
+      "selector": "#slide-0 .flex.flex-wrap.gap-2 span",
+      "index": 2,
+      "color": "rgb(251, 250, 247)",
+      "text": "Certified Title Opinion",
+      "box": {
+        "x": 468.125,
+        "y": 1795.328125,
+        "width": 184.625,
+        "height": 30
+      },
+      "fg": [
+        251,
+        250,
+        247
+      ],
+      "bg": [
+        62,
+        65,
+        72
+      ],
+      "bgRegion": {
+        "lum": 0.052726060436843,
+        "rgb": [
+          62,
+          65,
+          72
+        ],
+        "x": 652,
+        "y": 545,
+        "w": 1,
+        "h": 4
+      },
+      "brightestPixel": [
+        68,
+        71,
+        78
+      ],
+      "cr": 9.79,
+      "crBrightestPixel": 8.91,
+      "pass": true
+    },
+    {
+      "name": "Services / report line",
+      "selector": "#slide-0 .border-t > span",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Advocate-Signed Legal Report",
+      "box": {
+        "x": 121,
+        "y": 1983.328125,
+        "width": 206.109375,
+        "height": 16
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 121,
+        "y": 721,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    },
+    {
+      "name": "Services / CTA link",
+      "selector": "#slide-0 .border-t a",
+      "index": 0,
+      "color": "rgb(237, 232, 221)",
+      "text": "Initiate Scrutiny arrow_forward",
+      "box": {
+        "x": 625.1875,
+        "y": 1979.328125,
+        "width": 151.8125,
+        "height": 24
+      },
+      "fg": [
+        237,
+        232,
+        221
+      ],
+      "bg": [
+        21,
+        25,
+        34
+      ],
+      "bgRegion": {
+        "lum": 0.00970184122081379,
+        "rgb": [
+          21,
+          25,
+          34
+        ],
+        "x": 625,
+        "y": 717,
+        "w": 4,
+        "h": 4
+      },
+      "brightestPixel": [
+        21,
+        25,
+        34
+      ],
+      "cr": 14.39,
+      "crBrightestPixel": 14.39,
+      "pass": true
+    }
+  ]
+}

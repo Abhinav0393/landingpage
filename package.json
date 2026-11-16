@@ -1,0 +1,13 @@
+{
+  "name": "rivora-handoff-generator-source",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proxy workspace forwarding scripts to the rivora-website project",
+  "scripts": {
+    "dev": "npm --prefix ../rivora-website run dev",
+    "build": "npm --prefix ../rivora-website run build",
+    "preview": "npm --prefix ../rivora-website run preview",
+    "test": "npm --prefix ../rivora-website test"
+  }
+}
+

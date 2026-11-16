@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 extract.py)",
+      "Bash(python3 diagrams.py)",
+      "Bash(npx serve *)",
+      "Bash(curl -s http://localhost:3000)"
+    ]
+  }
+}
