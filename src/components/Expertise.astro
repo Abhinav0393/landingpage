@@ -1,0 +1,90 @@
+---
+import Icon from './Icon.astro';
+
+const scrutinyPoints = [
+  { label: 'Revenue Mutation Analysis', status: 'VERIFIED / UNBROKEN' },
+  { label: 'Section 22-A Prohibited Ledger', status: 'NEGATIVE / CLEAR' },
+  { label: 'Tippani & FMB Field Measurement', status: 'CONGRUENT WITH DEED' },
+  { label: 'High Court / Civil Court Docket Scan', status: 'NO LIS PENDENS' },
+  { label: 'Master Plan Land Zone Status', status: 'PERMITTED ZONE' },
+];
+
+const counselPoints = [
+  {
+    icon: 'account_tree',
+    title: 'Physical inspection of complex land records',
+    copy: 'Reconciling revenue department mutation ledgers, village survey maps, and registration department book extracts into a coherent evidentiary chain.',
+  },
+  {
+    icon: 'rule',
+    title: 'Strict adherence to land ceiling & master-plan regulations',
+    copy: 'Verifying agricultural land ceilings, urban development authority land-use master plans, and environmental buffer covenants.',
+  },
+  {
+    icon: 'security',
+    title: 'Uncompromising fiduciary independence',
+    copy: 'Independent opinions uninfluenced by broker mandates, designed solely to insulate purchaser liability and protect your investment.',
+  },
+] as const;
+---
+
+<section class="w-full bg-[#FBFAF7] border-t border-[#E4DED3] py-20 lg:py-24" id="expertise">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="reveal-item stagger-1 lg:col-span-6 space-y-6">
+        <span class="text-xs uppercase font-bold tracking-widest text-[#77592A] block">Experienced Legal Counsel</span>
+        <h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Trusted for high-stakes corporate acquisitions</h2>
+        <p class="text-base text-[#45474b] leading-relaxed">
+          Advocate RK.V and our senior legal team act as independent property counsel for institutional funds, developers, and corporate entities acquiring significant acreage across Southern India.
+        </p>
+
+        <div class="space-y-4 pt-2">
+          {counselPoints.map((point) => (
+            <div class="p-5 bg-white border border-[#E4DED3] rounded-2xl flex items-start gap-4">
+              <span class="flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl bg-[#F2EEE7] text-[#77592A]">
+                <Icon name={point.icon} size={20} />
+              </span>
+              <div>
+                <h3 class="text-sm font-semibold text-[#181c24]">{point.title}</h3>
+                <p class="text-sm text-[#45474b] mt-1 leading-relaxed">{point.copy}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div class="reveal-item stagger-2 lg:col-span-6">
+        <div class="bg-white border border-[#E4DED3] p-6 sm:p-8 lg:p-10 rounded-3xl">
+          <div class="flex flex-col gap-4 border-b border-[#E4DED3] pb-5 mb-3 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <span class="text-xs uppercase font-bold text-[#77592A] block">Counsel Verification Checklist</span>
+              <span class="text-base font-semibold text-[#181c24]">Legal Due Diligence Scrutiny Points</span>
+            </div>
+            <span class="text-xs font-bold bg-[#EDE8DD] px-3 py-1 text-[#181c24] uppercase rounded-full self-start sm:self-auto">Advocate Practice</span>
+          </div>
+
+          <div>
+            {scrutinyPoints.map((point) => (
+              <div class="flex flex-col gap-1 py-3 border-b border-[#E4DED3]/70 last:border-b-0 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+                <span class="flex items-center gap-2.5 text-sm text-[#45474b]">
+                  <Icon name="check" size={16} class="shrink-0 text-[#77592A]" />
+                  {point.label}
+                </span>
+                <span class="pl-[26px] text-xs font-bold tracking-wide text-[#77592A] sm:pl-0 sm:text-right">
+                  {point.status}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div class="mt-6 p-5 bg-[#FBFAF7] border border-[#E4DED3] rounded-2xl">
+            <span class="text-xs font-bold uppercase text-[#5C6370] block mb-1">Counsel Oversight Assurance</span>
+            <p class="text-sm text-[#45474b] leading-relaxed">
+              Every written report is authored by certified legal counsel, backed by certified extract copies from the relevant taluk and registrar offices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

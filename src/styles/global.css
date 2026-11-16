@@ -1,0 +1,255 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 100 1000;
+  font-display: optional; /* avoids late-swap layout work; preload keeps it fast on good connections */
+  src: url('/fonts/dm-sans-latin.woff2') format('woff2');
+}
+
+@theme {
+  --default-transition-duration: 300ms;
+  --default-transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  :root {
+    --color-primary: #151922;
+    --color-secondary: #A98A50;
+    --color-gold-ink: #77592A;
+    --color-ivory: #EDE8DD;
+    --color-canvas: #FBFAF7;
+    --color-surface: #FFFFFF;
+    --color-stone: #F2EEE7;
+    --color-foreground: #181c24;
+    --color-muted: #5C6370;
+    --color-border: #E4DED3;
+    --rv-ease: cubic-bezier(0.22, 1, 0.36, 1);
+    --rv-duration: 320ms;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #181c24;
+    background-color: #FBFAF7;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #FBFAF7;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2 {
+    letter-spacing: -0.025em;
+    text-wrap: balance;
+  }
+
+  h3, h4 {
+    letter-spacing: -0.025em;
+    text-wrap: wrap;
+  }
+
+  p {
+    text-wrap: wrap;
+  }
+
+  :focus-visible {
+    outline: 2px solid #A98A50;
+    outline-offset: 2px;
+  }
+}
+
+/* MARQUEE ANIMATIONS */
+@keyframes marquee-forward {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-container,
+.testimonial-marquee-container {
+  contain: layout paint;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-forward 35s linear infinite;
+}
+
+.marquee-container:hover .marquee-track,
+.marquee-container:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes testimonial-forward {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.testimonial-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: testimonial-forward 45s linear infinite;
+}
+
+.testimonial-marquee-container:hover .testimonial-marquee-track,
+.testimonial-marquee-container:focus-within .testimonial-marquee-track {
+  animation-play-state: paused;
+}
+
+.testimonial-marquee-container.is-paused .testimonial-marquee-track {
+  animation-play-state: paused;
+}
+
+.review-play-icon {
+  display: none;
+}
+
+.review-pause-btn[aria-pressed="true"] .review-pause-icon {
+  display: none;
+}
+
+.review-pause-btn[aria-pressed="true"] .review-play-icon {
+  display: block;
+}
+
+/* SCROLL REVEAL ANIMATIONS */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(18px);
+  transition:
+    opacity var(--rv-duration) var(--rv-ease),
+    transform var(--rv-duration) var(--rv-ease);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+#hero .reveal-item {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-item.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered Delay Helpers */
+.stagger-1 { --reveal-delay: 80ms; }
+.stagger-2 { --reveal-delay: 160ms; }
+.stagger-3 { --reveal-delay: 240ms; }
+.stagger-4 { --reveal-delay: 320ms; }
+.stagger-5 { --reveal-delay: 400ms; }
+.stagger-6 { --reveal-delay: 480ms; }
+
+/* SERVICES SLIDES TRANSITION */
+.practice-slide {
+  transition: opacity var(--rv-duration) var(--rv-ease);
+  will-change: opacity;
+}
+
+/* Floating WhatsApp: desktop only, and it steps out of the way at the footer. */
+.whatsapp-float {
+  transition:
+    opacity var(--rv-duration) var(--rv-ease),
+    transform var(--rv-duration) var(--rv-ease),
+    visibility var(--rv-duration) var(--rv-ease);
+}
+
+.whatsapp-float.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  pointer-events: none;
+}
+
+/* Practice artwork scrim: clear artwork on top (mobile) or right (desktop),
+   ink wash only beneath the copy. */
+.practice-scrim {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 20, 28, 0) 0%,
+    rgba(16, 20, 28, 0) 33%,
+    rgba(16, 20, 28, 0.32) 42%,
+    rgba(16, 20, 28, 0.86) 56%,
+    #10141c 74%
+  );
+}
+
+@media (min-width: 1024px) {
+  .practice-scrim {
+    background: linear-gradient(
+      90deg,
+      #10141c 0%,
+      rgba(16, 20, 28, 0.88) 30%,
+      rgba(16, 20, 28, 0.72) 44%,
+      rgba(16, 20, 28, 0.32) 54%,
+      rgba(16, 20, 28, 0.08) 62%,
+      rgba(16, 20, 28, 0) 70%
+    );
+  }
+}
+
+/* Mobile menu icon swap (SVG comes from Icon.astro, so keep these global) */
+.menu-close-icon {
+  display: none;
+}
+
+#mobile-menu-btn[aria-expanded="true"] .menu-open-icon {
+  display: none;
+}
+
+#mobile-menu-btn[aria-expanded="true"] .menu-close-icon {
+  display: block;
+}
+
+/* ACCESSIBILITY / PREFERS REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track, .testimonial-marquee-track {
+    animation: none !important;
+  }
+  .marquee-container, .testimonial-marquee-container {
+    overflow-x: auto;
+  }
+  .testimonial-marquee-container {
+    scrollbar-width: thin;
+  }
+  .testimonial-marquee-track {
+    transform: none !important;
+  }
+  .review-pause-btn,
+  [data-review-clone] {
+    display: none !important;
+  }
+  .reveal-item {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .practice-slide {
+    transition: none !important;
+  }
+  .whatsapp-float {
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* NO-JS FALLBACK */
+.no-js .reveal-item {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.no-js .review-pause-btn {
+  display: none !important;
+}
+

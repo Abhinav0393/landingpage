@@ -1,0 +1,246 @@
+---
+import { practiceAreas } from '../data/services';
+import Icon from './Icon.astro';
+const practices = practiceAreas;
+---
+
+<section class="w-full bg-[#F2EEE7] py-20 lg:py-24 border-t border-[#E4DED3]" id="services">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+    <!-- SECTION HEADER -->
+    <div class="reveal-item flex flex-col md:flex-row md:items-end md:justify-between mb-10 pb-4 border-b border-[#E4DED3] gap-6">
+      <div>
+        <span class="text-xs uppercase font-bold tracking-widest text-[#77592A] block mb-2">Practice Areas // Scrutiny Specialization</span>
+        <h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Comprehensive property legal scrutiny</h2>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-xs uppercase tracking-widest text-[#5C6370] font-bold mr-2" id="slider-counter" aria-live="polite">01 / 06</span>
+        <div class="flex gap-2">
+          <button 
+            type="button" 
+            id="prev-slide" 
+            aria-label="Previous practice area" 
+            class="w-11 h-11 rounded-full border border-[#E4DED3] bg-white flex items-center justify-center hover:bg-[#151922] hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-[#A98A50]"
+          >
+            <Icon name="arrow_back" size={18} />
+          </button>
+          <button 
+            type="button" 
+            id="next-slide" 
+            aria-label="Next practice area" 
+            class="w-11 h-11 rounded-full border border-[#E4DED3] bg-white flex items-center justify-center hover:bg-[#151922] hover:text-white transition-colors focus-visible:ring-2 focus-visible:ring-[#A98A50]"
+          >
+            <Icon name="arrow_forward" size={18} />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="reveal-item stagger-1 grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 gap-3 mb-6" id="practice-tabs" role="tablist" aria-label="Practice Area Tabs">
+      {practices.map((item, index) => (
+        <button 
+          type="button"
+          role="tab"
+          id={`tab-${index}`}
+          aria-selected={index === 0 ? "true" : "false"}
+          aria-controls={`slide-${index}`}
+          tabindex={index === 0 ? 0 : -1}
+          class={`practice-tab-btn py-3 px-3.5 border text-left rounded-2xl transition-colors min-h-[44px] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50] ${
+            index === 0 
+              ? 'border-[#A98A50] bg-[#151922] text-white' 
+              : 'border-[#E4DED3] bg-white hover:bg-[#FBFAF7] text-[#151922]'
+          }`}
+          data-index={index}
+        >
+          <span class={`text-[10px] tracking-widest block font-bold ${index === 0 ? 'text-[#A98A50]' : 'text-[#5C6370]'}`}>
+            {item.tabCategory}
+          </span>
+          <span class="text-xs truncate block font-medium">
+            {item.tabTitle}
+          </span>
+        </button>
+      ))}
+    </div>
+
+    <!-- CARD PANEL: artwork stays clear on the right, copy sits on the ink side -->
+    <div class="practice-panel reveal-item stagger-2 relative grid w-full overflow-hidden border border-[#E4DED3] bg-[#10141C] rounded-3xl">
+      {practices.map((item, index) => (
+        <div 
+          id={`slide-${index}`}
+          role="tabpanel"
+          aria-labelledby={`tab-${index}`}
+          aria-hidden={index === 0 ? 'false' : 'true'}
+          inert={index !== 0}
+          class={`practice-slide relative col-start-1 row-start-1 flex flex-col justify-start lg:justify-center overflow-hidden rounded-3xl bg-[#10141C] transition-opacity duration-300 text-white min-h-[660px] sm:min-h-[640px] lg:min-h-[560px] xl:min-h-[610px] ${
+            index === 0 
+              ? 'opacity-100 z-10 pointer-events-auto' 
+              : 'opacity-0 z-0 pointer-events-none'
+          }`}
+          data-slide-index={index}
+        >
+          <!-- ARTWORK CONTAINER: Stacked 16/9 on mobile/tablet, full background on desktop -->
+          <div class="practice-art-wrap relative w-full aspect-[16/9] lg:aspect-auto lg:absolute lg:inset-0 overflow-hidden shrink-0">
+            <picture class="w-full h-full block">
+              <source
+                media="(max-width: 1023px)"
+                type="image/avif"
+                srcset={`/images/${item.slug}-mobile-480.avif 480w, /images/${item.slug}-mobile-768.avif 768w`}
+                sizes="(max-width: 767px) 100vw, 768px"
+              />
+              <source
+                media="(max-width: 1023px)"
+                type="image/webp"
+                srcset={`/images/${item.slug}-mobile-480.webp 480w, /images/${item.slug}-mobile-768.webp 768w`}
+                sizes="(max-width: 767px) 100vw, 768px"
+              />
+              <source 
+                type="image/avif" 
+                srcset={`/images/${item.slug}-480.avif 480w, /images/${item.slug}-768.avif 768w, /images/${item.slug}-1100.avif 1100w, /images/${item.slug}-1440.avif 1440w`} 
+                sizes="(min-width: 1440px) 1312px, (min-width: 1024px) calc(100vw - 128px), 100vw" 
+              />
+              <source 
+                type="image/webp" 
+                srcset={`/images/${item.slug}-480.webp 480w, /images/${item.slug}-768.webp 768w, /images/${item.slug}-1100.webp 1100w, /images/${item.slug}-1440.webp 1440w`} 
+                sizes="(min-width: 1440px) 1312px, (min-width: 1024px) calc(100vw - 128px), 100vw" 
+              />
+              <img 
+                src={`/images/${item.slug}-768.jpg`} 
+                srcset={`/images/${item.slug}-480.jpg 480w, /images/${item.slug}-768.jpg 768w, /images/${item.slug}-1100.jpg 1100w, /images/${item.slug}-1440.jpg 1440w`} 
+                sizes="(min-width: 1440px) 1312px, (min-width: 1024px) calc(100vw - 128px), 100vw" 
+                width="1440" 
+                height="700" 
+                alt={item.alt} 
+                loading="lazy" 
+                decoding="async" 
+                class="practice-art w-full h-full select-none object-cover object-center" 
+                data-practice-art
+              />
+            </picture>
+
+            <!-- Soft bottom fade on mobile where art meets ink -->
+            <div class="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-[#10141C] to-transparent pointer-events-none lg:hidden" aria-hidden="true"></div>
+
+            <!-- ARTWORK SCRIM: active on desktop only (copy side wash) -->
+            <div class="practice-scrim pointer-events-none hidden lg:block absolute inset-0" data-practice-scrim aria-hidden="true"></div>
+          </div>
+
+          <!-- SLIDE CONTENT -->
+          <div class="relative z-10 w-full p-6 sm:p-8 md:p-10 lg:p-14 lg:max-w-[470px] xl:max-w-[560px] 2xl:max-w-[600px]" data-practice-content>
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 bg-[#10141C]/70 border border-[#A98A50]/80 rounded-full">
+              <span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+              <span class="text-xs uppercase font-bold text-[#EDE8DD] tracking-widest">{item.badge}</span>
+            </div>
+
+            <h3 class="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-[#FBFAF7] tracking-tight text-balance">
+              {item.title}
+            </h3>
+
+            <p class="mt-4 text-sm sm:text-base text-[#EDE8DD] leading-relaxed">
+              {item.desc}
+            </p>
+
+            <div class="flex flex-wrap gap-2 pt-5">
+              {item.tags.map(tag => (
+                <span class="text-xs font-semibold uppercase tracking-wider bg-[#10141C]/65 px-3 py-1.5 border border-white/25 text-[#FBFAF7] rounded-full">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-white/20 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <span class="text-xs font-bold uppercase text-[#D5D0C6]">
+                {item.reportText}
+              </span>
+              <a 
+                class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#EDE8DD] hover:text-[#C9AE74] transition-colors focus:outline-none focus-visible:underline" 
+                href="#contact"
+              >
+                {item.ctaText} <Icon name="arrow_forward" size={16} />
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+  (() => {
+    let currentIdx = 0;
+    const totalSlides = 6;
+    const slides = document.querySelectorAll('.practice-slide');
+    const tabs = document.querySelectorAll('.practice-tab-btn');
+    const counter = document.getElementById('slider-counter');
+    const prevBtn = document.getElementById('prev-slide');
+    const nextBtn = document.getElementById('next-slide');
+
+    function updateSlide(index) {
+      if (index < 0) index = totalSlides - 1;
+      if (index >= totalSlides) index = 0;
+      currentIdx = index;
+
+      slides.forEach((slide, i) => {
+        if (i === currentIdx) {
+          slide.classList.remove('opacity-0', 'pointer-events-none', 'z-0');
+          slide.classList.add('opacity-100', 'pointer-events-auto', 'z-10');
+          slide.setAttribute('aria-hidden', 'false');
+          slide.inert = false;
+        } else {
+          slide.classList.add('opacity-0', 'pointer-events-none', 'z-0');
+          slide.classList.remove('opacity-100', 'pointer-events-auto', 'z-10');
+          slide.setAttribute('aria-hidden', 'true');
+          slide.inert = true;
+        }
+      });
+
+      tabs.forEach((tab, i) => {
+        const catSpan = tab.querySelector('span:first-child');
+        if (i === currentIdx) {
+          tab.setAttribute('aria-selected', 'true');
+          tab.tabIndex = 0;
+          tab.className = 'practice-tab-btn py-3 px-3.5 border border-[#A98A50] bg-[#151922] text-white text-left rounded-2xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50]';
+          if (catSpan) catSpan.className = 'text-[10px] tracking-widest block font-bold text-[#A98A50]';
+        } else {
+          tab.setAttribute('aria-selected', 'false');
+          tab.tabIndex = -1;
+          tab.className = 'practice-tab-btn py-3 px-3.5 border border-[#E4DED3] bg-white hover:bg-[#FBFAF7] text-[#151922] text-left rounded-2xl transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50]';
+          if (catSpan) catSpan.className = 'text-[10px] tracking-widest block font-bold text-[#5C6370]';
+        }
+      });
+
+      if (counter) {
+        counter.textContent = `0${currentIdx + 1} / 0${totalSlides}`;
+      }
+    }
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const idx = parseInt(tab.getAttribute('data-index') || '0', 10);
+        updateSlide(idx);
+      });
+      tab.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+          e.preventDefault();
+          const next = (currentIdx + 1) % totalSlides;
+          updateSlide(next);
+          tabs[next].focus();
+        } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prev = (currentIdx - 1 + totalSlides) % totalSlides;
+          updateSlide(prev);
+          tabs[prev].focus();
+        }
+      });
+    });
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => updateSlide(currentIdx - 1));
+    }
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => updateSlide(currentIdx + 1));
+    }
+
+    window.goToPracticeSlide = updateSlide;
+  })();
+</script>

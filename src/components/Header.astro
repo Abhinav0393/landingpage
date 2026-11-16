@@ -1,0 +1,148 @@
+---
+import Icon from './Icon.astro';
+import Logo from './Logo.astro';
+---
+
+<header class="sticky top-0 inset-x-0 z-50 bg-[#FAF9F5]/95 backdrop-blur-md border-b border-[#E4DED3]/60">
+  <div class="h-20 max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16 flex items-center justify-between gap-6">
+    <!-- SUPPLIED LOGO WITH DESCRIPTOR -->
+    <a class="flex flex-col items-center justify-center shrink-0 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50] rounded-2xl py-1 px-1.5" href="#hero" aria-label="RIVORA Advocates & Associates home">
+      <Logo height={32} class="h-7 w-auto sm:h-8 group-hover:opacity-90 transition-opacity" />
+      <span class="text-[9px] min-[360px]:text-[10px] sm:text-[10.5px] uppercase tracking-[0.22em] font-semibold text-[#77592A] text-center whitespace-nowrap leading-none mt-1">
+        Advocates &amp; Associates
+      </span>
+    </a>
+
+    <!-- DESKTOP NAV -->
+    <nav class="hidden xl:flex items-center gap-7 2xl:gap-8" aria-label="Main Navigation">
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#pillars">PILLARS</a>
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#services">SERVICES</a>
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#search-depth">SEARCH DEPTH</a>
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#process">PROCESS</a>
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#expertise">ACQUISITIONS</a>
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#reviews">REVIEWS</a>
+      <a class="text-[11.5px] uppercase tracking-[0.14em] text-[#5C6370] hover:text-[#151922] font-medium transition-colors py-2" href="#faq">FAQ</a>
+    </nav>
+
+    <!-- ACTIONS -->
+    <div class="flex items-center gap-3.5">
+      <a class="hidden sm:inline-flex items-center justify-center bg-[#151922] text-[#EDE8DD] font-semibold text-xs tracking-wider uppercase px-5 py-2.5 rounded-full border border-[#A98A50]/70 hover:bg-[#262C3B] hover:border-[#A98A50] transition-colors min-h-[44px]" href="#contact">
+        CONTACT
+      </a>
+
+      <!-- MOBILE HAMBURGER BUTTON (Below 1200px / xl) -->
+      <button 
+        type="button" 
+        id="mobile-menu-btn" 
+        class="xl:hidden w-11 h-11 rounded-2xl bg-white border border-[#E4DED3] text-[#151922] flex items-center justify-center hover:bg-[#F2EEE7] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50]" 
+        aria-label="Open mobile menu" 
+        aria-expanded="false" 
+        aria-controls="mobile-menu-drawer"
+      >
+        <Icon name="menu" size={22} class="menu-open-icon" />
+        <Icon name="close" size={22} class="menu-close-icon" />
+      </button>
+    </div>
+  </div>
+
+  <!-- MOBILE DRAWER -->
+  <div 
+    id="mobile-menu-drawer" 
+    class="xl:hidden fixed inset-x-0 top-20 bg-[#FAF9F5] border-b border-[#E4DED3] transition-[transform,opacity] duration-300 transform -translate-y-full opacity-0 pointer-events-none z-40 max-h-[calc(100vh-5rem)] overflow-y-auto"
+    aria-hidden="true"
+    inert
+  >
+    <div class="px-6 py-8 space-y-4 max-w-lg mx-auto">
+      <nav class="flex flex-col space-y-1" aria-label="Mobile Navigation">
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#pillars">PILLARS</a>
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#services">SERVICES</a>
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#search-depth">SEARCH DEPTH</a>
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#process">PROCESS</a>
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#expertise">ACQUISITIONS</a>
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#reviews">REVIEWS</a>
+        <a class="mobile-nav-link text-sm font-semibold tracking-wider text-[#151922] hover:text-[#77592A] hover:bg-[#F2EEE7]/80 px-4 py-3 rounded-2xl transition-colors min-h-[44px] flex items-center" href="#faq">FAQ</a>
+      </nav>
+      <div class="pt-4 border-t border-[#E4DED3] space-y-3">
+        <a class="w-full flex items-center justify-center bg-[#151922] text-[#EDE8DD] font-semibold text-xs tracking-wider uppercase py-3.5 rounded-full border border-[#A98A50] hover:bg-[#262C3B] transition-colors min-h-[44px]" href="#contact">
+          INITIATE TITLE VERIFICATION
+        </a>
+        <a class="w-full flex items-center justify-center gap-2 bg-white text-[#151922] font-semibold text-xs tracking-wider uppercase py-3.5 rounded-full border border-[#E4DED3] hover:border-[#A98A50] transition-colors min-h-[44px]" href="https://wa.me/918099888851" target="_blank" rel="noopener noreferrer">
+          <Icon name="chat" size={16} class="text-[#77592A]" />
+          WHATSAPP DESK
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script is:inline>
+  (() => {
+    const btn = document.getElementById('mobile-menu-btn');
+    const drawer = document.getElementById('mobile-menu-drawer');
+    const main = document.getElementById('main-content');
+    const footer = document.querySelector('footer');
+    const links = document.querySelectorAll('.mobile-nav-link');
+
+    if (!btn || !drawer) return;
+
+    let isOpen = false;
+
+    function setBackgroundInert(value) {
+      if (main) main.inert = value;
+      if (footer) footer.inert = value;
+    }
+
+    function openMenu() {
+      isOpen = true;
+      btn.setAttribute('aria-expanded', 'true');
+      btn.setAttribute('aria-label', 'Close mobile menu');
+      drawer.setAttribute('aria-hidden', 'false');
+      drawer.inert = false;
+      drawer.classList.remove('-translate-y-full', 'opacity-0', 'pointer-events-none');
+      drawer.classList.add('translate-y-0', 'opacity-100');
+      setBackgroundInert(true);
+      document.body.style.overflow = 'hidden';
+      drawer.querySelector('a')?.focus();
+    }
+
+    function closeMenu(restoreFocus = true) {
+      isOpen = false;
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open mobile menu');
+      drawer.setAttribute('aria-hidden', 'true');
+      drawer.classList.add('-translate-y-full', 'opacity-0', 'pointer-events-none');
+      drawer.classList.remove('translate-y-0', 'opacity-100');
+      drawer.inert = true;
+      setBackgroundInert(false);
+      document.body.style.overflow = '';
+      if (restoreFocus) btn.focus();
+    }
+
+    btn.addEventListener('click', () => {
+      if (isOpen) closeMenu();
+      else openMenu();
+    });
+
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu(false);
+      });
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isOpen) {
+        closeMenu();
+      }
+    });
+
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        if (isOpen && window.innerWidth >= 1200) {
+          closeMenu(false);
+        }
+      }, 150);
+    }, { passive: true });
+  })();
+</script>

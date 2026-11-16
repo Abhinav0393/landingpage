@@ -1,0 +1,78 @@
+---
+interface Props {
+  name:
+    | 'arrow_back'
+    | 'arrow_forward'
+    | 'check'
+    | 'check_circle'
+    | 'verified_user'
+    | 'menu'
+    | 'close'
+    | 'account_tree'
+    | 'rule'
+    | 'security'
+    | 'assignment'
+    | 'folder_open'
+    | 'manage_search'
+    | 'gavel'
+    | 'verified'
+    | 'call'
+    | 'content_copy'
+    | 'chat'
+    | 'encrypted';
+  size?: number;
+  class?: string;
+  strokeWidth?: number;
+}
+
+const { name, size = 20, class: className = '', strokeWidth = 1.7 } = Astro.props;
+
+const ICONS: Record<Props['name'], string> = {
+  arrow_back: '<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
+  arrow_forward: '<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',
+  check: '<path d="M20 6 9 17l-5-5"/>',
+  check_circle: '<circle cx="12" cy="12" r="9"/><path d="m8.5 12 2.5 2.5 4.5-5"/>',
+  verified_user:
+    '<path d="M12 3 5 6v5c0 4.6 3 8.1 7 10 4-1.9 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>',
+  menu: '<path d="M4 7h16M4 12h16M4 17h16"/>',
+  close: '<path d="m6 6 12 12M18 6 6 18"/>',
+  account_tree:
+    '<rect x="9" y="3" width="6" height="5" rx="1"/><rect x="3" y="16" width="6" height="5" rx="1"/><rect x="15" y="16" width="6" height="5" rx="1"/><path d="M12 8v4M6 16v-2h12v2"/>',
+  rule: '<path d="M4 7h16M4 12h7"/><path d="m14 15 2 2 4-4"/>',
+  security:
+    '<path d="M12 3 5 6v5c0 4.6 3 8.1 7 10 4-1.9 7-5.4 7-10V6l-7-3Z"/><path d="M12 8v4"/><path d="M12 16h.01"/>',
+  assignment:
+    '<rect x="5" y="4.5" width="14" height="16.5" rx="2"/><path d="M9 4.5h6v3H9z"/><path d="M8 11h8M8 15h5"/>',
+  folder_open:
+    '<path d="M4 7a2 2 0 0 1 2-2h4l2 2h6a2 2 0 0 1 2 2v1H4V7Z"/><path d="M4 10h16l-1.6 7.4a2 2 0 0 1-2 1.6H6.2a2 2 0 0 1-2-1.6L4 10Z"/>',
+  manage_search: '<circle cx="11" cy="11" r="6"/><path d="m16 16 4 4"/><path d="M8.5 11h5"/>',
+  gavel:
+    '<path d="m9 5 5 5M12 2l5 5M4 9l5 5"/><path d="m14 7 3-3M10 11l3-3"/><path d="M13 13 6 20"/><path d="M5 22h12"/>',
+  verified:
+    '<path d="m12 3 2.2 2.2 3.1-.4.9 3 2.8 1.4-1.2 2.9 1.2 2.9-2.8 1.4-.9 3-3.1-.4L12 21l-2.2-2.2-3.1.4-.9-3L3 14.8l1.2-2.9L3 9l2.8-1.4.9-3 3.1.4L12 3Z"/><path d="m9 12 2 2 4-4"/>',
+  call:
+    '<path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z"/>',
+  content_copy:
+    '<rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/>',
+  chat:
+    '<path d="M20 4H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h3v4l5-4h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"/>',
+  encrypted:
+    '<rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><path d="M12 14v3"/>',
+};
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width={size}
+  height={size}
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width={strokeWidth}
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  class={className}
+  aria-hidden="true"
+  focusable="false"
+  set:html={ICONS[name]}
+/>

@@ -1,0 +1,139 @@
+---
+import Icon from './Icon.astro';
+---
+
+<section class="w-full bg-[#FBFAF7] border-t border-[#E4DED3] py-20 lg:py-24" id="search-depth">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+    <div class="reveal-item text-center max-w-3xl mx-auto mb-12 lg:mb-16">
+      <span class="text-xs uppercase font-bold tracking-widest text-[#77592A] block mb-2">Investigation Horizons</span>
+      <h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">How far back we search</h2>
+      <p class="text-base text-[#45474b] mt-3 text-pretty">Land rights are generational. We tailor historical scrutiny to the specific legal risks of each transaction class.</p>
+      
+      <!-- CRISP SEARCH-DEPTH TIMELINE -->
+      <div class="hidden md:block w-full max-w-2xl mx-auto mt-10 mb-2" aria-hidden="true">
+        <div class="relative mx-[8.333%] h-6">
+          <div class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-[#D8D1C4]"></div>
+          <div class="absolute left-0 w-1/2 top-1/2 h-[2px] -translate-y-1/2 bg-[#A98A50]"></div>
+          <div class="relative grid h-6 grid-cols-3 items-center">
+            <span class="justify-self-start w-3.5 h-3.5 rounded-full bg-[#151922] border-2 border-[#A98A50]"></span>
+            <span class="justify-self-center w-5 h-5 rounded-full bg-[#A98A50] border-2 border-[#151922] shadow-[inset_0_0_0_4px_#FBFAF7]"></span>
+            <span class="justify-self-end w-3.5 h-3.5 rounded-full bg-white border-2 border-[#5C6370]"></span>
+          </div>
+        </div>
+        <div class="mx-[8.333%] mt-3 grid grid-cols-3 text-[11px] font-bold uppercase tracking-wider">
+          <span class="text-left text-[#5C6370]">15 Years</span>
+          <span class="text-center text-[#77592A]">30 Years (Statutory)</span>
+          <span class="text-right text-[#5C6370]">60 Years</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+      <!-- 15 Years -->
+      <div class="reveal-item stagger-1 bg-white p-8 border border-[#E4DED3] rounded-3xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-baseline justify-between mb-4 pb-4 border-b border-[#E4DED3]">
+            <span class="text-4xl font-bold text-[#181c24]">15</span>
+            <span class="text-xs uppercase font-bold text-[#5C6370]">Years Horizon</span>
+          </div>
+          <h3 class="text-xl font-semibold text-[#181c24] mb-3">Focused search</h3>
+          <p class="text-sm text-[#45474b] mb-6 leading-relaxed text-pretty">
+            Designed for standard residential resale properties in developed gated communities with clear prior institutional approvals.
+          </p>
+          <ul class="space-y-2.5 text-sm text-[#45474b]">
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Registered link documents</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Encumbrance search (EC)</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Recent property tax receipts</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Approved layout plan verification</span>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-[#E4DED3]">
+          <span class="text-xs uppercase font-bold text-[#5C6370] block">Suitability</span>
+          <span class="text-sm font-semibold text-[#181c24]">Apartments &amp; Plotted Resales</span>
+        </div>
+      </div>
+
+      <!-- 30 Years -->
+      <div class="reveal-item stagger-2 bg-white p-8 border-2 border-[#A98A50] rounded-3xl flex flex-col justify-between relative">
+        <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 w-max whitespace-nowrap bg-[#A98A50] text-[#151922] px-5 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+          Statutory Standard Benchmark
+        </div>
+        <div>
+          <div class="flex items-baseline justify-between mb-4 pb-4 border-b border-[#E4DED3] pt-2">
+            <span class="text-4xl font-bold text-[#77592A]">30</span>
+            <span class="text-xs uppercase font-bold text-[#77592A]">Recommended</span>
+          </div>
+          <h3 class="text-xl font-semibold text-[#181c24] mb-3">General standard</h3>
+          <p class="text-sm text-[#45474b] mb-6 leading-relaxed text-pretty">
+            The recommended legal standard under property law. Verifies an unbroken 30-year chain of title, ensuring root title validity and eliminating undisclosed claims.
+          </p>
+          <ul class="space-y-2.5 text-sm text-[#45474b]">
+            <li class="flex items-start gap-2">
+              <Icon name="check_circle" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Unbroken title sequence</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check_circle" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Revenue records &amp; Pahani ledger</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check_circle" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Section 22-A prohibited property scan</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check_circle" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Civil court index search</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check_circle" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Sub-Registrar books inspection</span>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-[#E4DED3]">
+          <span class="text-xs uppercase font-bold text-[#77592A] block">Legal Protection</span>
+          <span class="text-sm font-semibold text-[#181c24]">Institutional Purchases &amp; Major Investments</span>
+        </div>
+      </div>
+
+      <!-- 60 Years -->
+      <div class="reveal-item stagger-3 bg-white p-8 border border-[#E4DED3] rounded-3xl flex flex-col justify-between">
+        <div>
+          <div class="flex items-baseline justify-between mb-4 pb-4 border-b border-[#E4DED3]">
+            <span class="text-4xl font-bold text-[#181c24]">60</span>
+            <span class="text-xs uppercase font-bold text-[#5C6370]">Years Horizon</span>
+          </div>
+          <h3 class="text-xl font-semibold text-[#181c24] mb-3">Extended search</h3>
+          <p class="text-sm text-[#45474b] mb-6 leading-relaxed text-pretty">
+            Exhaustive historical forensic scrutiny for ancestral agricultural tracts, large parcels, greenfield conversions, and high-value sovereign assets.
+          </p>
+          <ul class="space-y-2.5 text-sm text-[#45474b]">
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Inam / Jagir / Grant root validation</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Khasra Pahani genealogy verification</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Statutory land ceiling audits</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Wakf, Endowments &amp; Govt. land records</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <Icon name="check" size={16} class="mt-0.5 shrink-0 text-[#77592A]" /> <span>Survey boundary &amp; Tippani reconciliation</span>
+            </li>
+          </ul>
+        </div>
+        <div class="pt-6 mt-6 border-t border-[#E4DED3]">
+          <span class="text-xs uppercase font-bold text-[#5C6370] block">Suitability</span>
+          <span class="text-sm font-semibold text-[#181c24]">Agricultural Land, Large Parcels &amp; JVs</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

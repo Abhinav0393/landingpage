@@ -1,13 +1,40 @@
 {
-  "name": "rivora-handoff-generator-source",
+  "name": "rivora-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Proxy workspace forwarding scripts to the rivora-website project",
+  "type": "module",
+  "description": "RIVORA Advocates & Associates — land and property title verification website.",
+  "engines": {
+    "node": ">=20.3.0"
+  },
   "scripts": {
-    "dev": "npm --prefix ../rivora-website run dev",
-    "build": "npm --prefix ../rivora-website run build",
-    "preview": "npm --prefix ../rivora-website run preview",
-    "test": "npm --prefix ../rivora-website test"
+    "dev": "astro dev --port 4321",
+    "start": "astro dev --port 4321",
+    "build": "node scripts/build.mjs",
+    "preview": "astro preview --port 4321",
+    "images": "node scripts/generate-images.mjs",
+    "art": "node scripts/generate-practice-art.mjs",
+    "og": "node scripts/generate-og.mjs",
+    "package:preview": "node scripts/package-deploy.mjs --preview",
+    "package:deploy": "node scripts/package-deploy.mjs",
+    "test:contact": "node scripts/test-contact-endpoint.mjs",
+    "audit:layout": "node scripts/audit-layout.mjs",
+    "audit:lighthouse": "node scripts/lighthouse-median.mjs",
+    "test": "playwright test"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "astro": "^5.0.0",
+    "nodemailer": "^10.6.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.49.0",
+    "archiver": "^8.0.0",
+    "chrome-launcher": "^1.2.3",
+    "lighthouse": "^13.6.0",
+    "sharp": "^0.33.5",
+    "typescript": "^5.7.0"
   }
 }
-

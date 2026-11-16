@@ -1,0 +1,369 @@
+---
+import Icon from './Icon.astro';
+import { siteEnv } from '../lib/site-env';
+
+const fieldClass =
+  'w-full min-h-[46px] rounded-2xl border border-[#D9D2C6] bg-[#FBFAF7] px-4 py-3 text-base text-[#181c24] placeholder:text-[#777b84] transition-colors focus:border-[#A98A50] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50]';
+const labelClass = 'block text-[11px] font-bold uppercase tracking-[0.14em] text-[#5C6370] mb-2';
+---
+
+<section class="w-full bg-[#F2EEE7] py-20 lg:py-24 border-t border-[#E4DED3]" id="contact">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+    <div class="max-w-6xl mx-auto space-y-10">
+      <div class="reveal-item text-center space-y-3">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-[#FBFAF7] border border-[#A98A50] rounded-full">
+          <span class="w-2 h-2 rounded-full bg-[#A98A50]"></span>
+          <span class="text-xs uppercase tracking-widest text-[#77592A] font-bold">Personal Legal Counsel // Direct Access</span>
+        </div>
+        <h2 class="text-3xl lg:text-4xl font-semibold text-[#181c24] tracking-tight">Request a consultation</h2>
+        <p class="text-base text-[#45474b] max-w-2xl mx-auto leading-relaxed">
+          Speak directly with Senior Advocate RK.V and our property law associates to discuss your survey numbers, documentation state, and title verification timeline.
+        </p>
+      </div>
+
+      <div class="reveal-item stagger-1 bg-white border border-[#E4DED3] rounded-3xl overflow-hidden">
+        <div class="grid lg:grid-cols-[0.85fr_1.15fr]">
+          <!-- DIRECT CONTACT -->
+          <div class="p-6 sm:p-10 lg:p-12 bg-[#FBFAF7] border-b lg:border-b-0 lg:border-r border-[#E4DED3] flex flex-col gap-8">
+            <div>
+              <span class="text-xs uppercase font-bold text-[#77592A] block">Principal Legal Counsel</span>
+              <h3 class="text-2xl font-bold text-[#181c24] mt-1">Advocate RK.V &amp; Associates</h3>
+              <p class="text-sm text-[#45474b] mt-1">Practicing Counsel &amp; Title Examination Specialists</p>
+              <div class="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-white border border-[#E4DED3] rounded-full">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+                <span class="text-xs uppercase font-bold tracking-wider text-[#181c24]">Consultations Active</span>
+              </div>
+            </div>
+
+            <div>
+              <span class="text-xs uppercase font-bold text-[#5C6370] block mb-1">Direct Counsel Line &amp; Dossier Desk</span>
+              <a class="text-[26px] sm:text-4xl lg:text-5xl font-bold text-[#181c24] tracking-tight leading-none hover:text-[#77592A] transition-colors" href="tel:+918099888851">
+                +91 8099888851
+              </a>
+              <span class="text-sm text-[#45474b] block mt-3">Direct line to chambers for prospective purchasers and developers</span>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3">
+              <a
+                class="inline-flex items-center justify-center gap-2 py-3 px-5 bg-[#151922] text-white text-xs font-semibold uppercase tracking-wider rounded-2xl hover:bg-[#262C3B] transition-colors min-h-[44px] focus-visible:ring-2 focus-visible:ring-[#A98A50]"
+                href="tel:+918099888851"
+              >
+                <Icon name="call" size={18} />
+                Call Chambers
+              </a>
+              <button
+                id="copy-phone-btn"
+                type="button"
+                class="inline-flex items-center justify-center gap-2 py-3 px-5 bg-white text-[#181c24] border border-[#E4DED3] text-xs font-semibold uppercase tracking-wider rounded-2xl hover:bg-[#F2EEE7] transition-colors min-h-[44px] focus-visible:ring-2 focus-visible:ring-[#A98A50]"
+              >
+                <Icon name="content_copy" size={18} />
+                Copy Number
+              </button>
+              <a
+                class="inline-flex items-center justify-center gap-2 py-3 px-5 bg-[#A98A50] text-[#151922] text-xs font-semibold uppercase tracking-wider rounded-2xl hover:bg-[#8F733E] hover:text-[#151922] transition-colors min-h-[44px] focus-visible:ring-2 focus-visible:ring-[#A98A50]"
+                href="https://wa.me/918099888851"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                <Icon name="chat" size={18} />
+                WhatsApp Desk
+              </a>
+            </div>
+
+            <div class="hidden text-center py-2.5 px-4 bg-[#151922] text-white text-xs font-semibold uppercase tracking-wider rounded-2xl transition-colors" id="copy-toast" role="status" aria-live="polite">
+              Telephone Number Copied to Clipboard
+            </div>
+
+            <div class="mt-auto pt-6 border-t border-[#E4DED3] space-y-4">
+              <div>
+                <span class="text-xs uppercase font-bold text-[#77592A] block mb-1">Service Jurisdictions</span>
+                <span class="text-sm font-semibold text-[#181c24]">Telangana &nbsp;|&nbsp; Andhra Pradesh &nbsp;|&nbsp; New Delhi</span>
+              </div>
+              <div class="inline-flex items-center gap-2 text-[#45474b] text-sm">
+                <Icon name="verified_user" size={18} class="shrink-0 text-[#77592A]" />
+                <span>Senior Advocate Direct Scrutiny</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONTACT FORM -->
+          <div class="p-6 sm:p-10 lg:p-12">
+            <h3 class="text-2xl font-bold text-[#181c24] tracking-tight">Send a confidential enquiry</h3>
+            <p class="text-sm text-[#45474b] mt-2 leading-relaxed">
+              Share the property location, the records you hold, and what you need reviewed. Our office will respond using the contact details you provide.
+            </p>
+
+            <div class="mt-5 flex items-start gap-3 rounded-2xl border border-[#D9C9A8] bg-[#FBF6EA] px-4 py-3 text-sm text-[#5A4A2A]">
+              <Icon name="security" size={19} class="shrink-0 mt-0.5 text-[#77592A]" />
+              <p class="leading-relaxed">
+                Please do not send title deeds or other confidential documents through this form. Share a brief summary only; if documents are needed, the office will arrange a secure transfer.
+              </p>
+            </div>
+
+            <form
+              class="mt-6 space-y-5"
+              action="/api/contact"
+              method="post"
+              data-contact-form
+              data-site-env={siteEnv}
+              novalidate={false}
+            >
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label class={labelClass} for="contact-name">Full name <span class="text-[#9A3B2E]" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                  <input class={fieldClass} id="contact-name" name="name" type="text" autocomplete="name" maxlength="120" required aria-describedby="error-name" />
+                  <p class="mt-1.5 text-xs text-[#9A3B2E]" id="error-name" data-error-for="name" hidden></p>
+                </div>
+                <div>
+                  <label class={labelClass} for="contact-email">Email <span class="text-[#9A3B2E]" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                  <input class={fieldClass} id="contact-email" name="email" type="email" autocomplete="email" maxlength="200" required aria-describedby="error-email" />
+                  <p class="mt-1.5 text-xs text-[#9A3B2E]" id="error-email" data-error-for="email" hidden></p>
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-5">
+                <div>
+                  <label class={labelClass} for="contact-phone">Telephone <span class="text-[#9A3B2E]" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                  <input class={fieldClass} id="contact-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" required aria-describedby="error-phone" />
+                  <p class="mt-1.5 text-xs text-[#9A3B2E]" id="error-phone" data-error-for="phone" hidden></p>
+                </div>
+                <div>
+                  <label class={labelClass} for="contact-location">Property location / survey no.</label>
+                  <input class={fieldClass} id="contact-location" name="location" type="text" autocomplete="off" maxlength="200" aria-describedby="error-location" />
+                  <p class="mt-1.5 text-xs text-[#9A3B2E]" id="error-location" data-error-for="location" hidden></p>
+                </div>
+              </div>
+
+              <div>
+                <label class={labelClass} for="contact-enquiry">Enquiry type</label>
+                <select class={fieldClass} id="contact-enquiry" name="enquiry" aria-describedby="error-enquiry">
+                  <option value="General enquiry">General enquiry</option>
+                  <option value="Title verification and due diligence">Title verification and due diligence</option>
+                  <option value="Property documentation">Property documentation</option>
+                  <option value="Pre-litigation advisory">Pre-litigation advisory</option>
+                  <option value="Institutional acquisition">Institutional acquisition</option>
+                  <option value="Litigation support">Litigation support</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="mt-1.5 text-xs text-[#9A3B2E]" id="error-enquiry" data-error-for="enquiry" hidden></p>
+              </div>
+
+              <div>
+                <label class={labelClass} for="contact-message">Brief summary <span class="text-[#9A3B2E]" aria-hidden="true">*</span><span class="sr-only"> (required)</span></label>
+                <textarea class={`${fieldClass} min-h-[132px] resize-y`} id="contact-message" name="message" rows="5" maxlength="5000" required aria-describedby="error-message"></textarea>
+                <p class="mt-1.5 text-xs text-[#9A3B2E]" id="error-message" data-error-for="message" hidden></p>
+              </div>
+
+              <!-- Honeypot: hidden from people, tempting to bots. -->
+              <div class="contact-hp" aria-hidden="true">
+                <label for="contact-website">Website</label>
+                <input id="contact-website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <div class="flex items-start gap-3 pt-1">
+                <input
+                  type="checkbox"
+                  id="contact-consent"
+                  name="consent"
+                  required
+                  class="mt-1 h-4 w-4 rounded border-[#D9D2C6] text-[#A98A50] focus:ring-[#A98A50]"
+                />
+                <label for="contact-consent" class="text-xs text-[#5C6370] leading-relaxed cursor-pointer select-none">
+                  I agree to the processing of the details provided in accordance with the <a href="/privacy-policy/" class="text-[#77592A] underline hover:text-[#151922] transition-colors focus:outline-none focus-visible:ring-1 focus-visible:ring-[#A98A50]">Privacy Policy</a>.
+                </label>
+              </div>
+
+              <div class="flex flex-col sm:flex-row sm:items-center gap-4 pt-1">
+                <button
+                  class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-[#A98A50] text-[#151922] font-bold text-sm tracking-wider uppercase border border-[#A98A50] hover:bg-[#8F733E] hover:text-white rounded-full transition-colors min-h-[48px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#77592A] disabled:opacity-70 disabled:cursor-wait"
+                  type="submit"
+                  data-submit-label="Send enquiry"
+                >
+                  <span data-submit-text>Send enquiry</span>
+                  <Icon name="arrow_forward" size={18} />
+                </button>
+                <p class="text-xs text-[#5C6370] leading-relaxed">
+                  Your details are used only to respond to this enquiry.
+                </p>
+              </div>
+
+              <div class="hidden rounded-2xl border px-4 py-3 text-sm leading-relaxed" data-contact-status role="status" aria-live="polite" tabindex="-1"></div>
+
+              <noscript>
+                <p class="text-xs text-[#5C6370] leading-relaxed">
+                  JavaScript is not required. Submitting this form will open a confirmation page after the message is processed.
+                </p>
+              </noscript>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-item stagger-2 p-6 bg-[#FBFAF7] border border-[#E4DED3] rounded-2xl flex items-center justify-center gap-3 text-center text-[#45474b] text-sm">
+        <Icon name="encrypted" size={20} class="shrink-0 text-[#77592A]" />
+        <span>All consultations, deed abstracts, survey records, and transactions are held under strict professional privilege and confidentiality pursuant to the Advocates Act.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact-hp {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  [data-contact-form] [aria-invalid='true'] {
+    border-color: #9a3b2e;
+  }
+</style>
+
+<script>
+  (() => {
+    const copyBtn = document.getElementById('copy-phone-btn');
+    const toast = document.getElementById('copy-toast');
+    if (copyBtn && toast) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText('+918099888851');
+          toast.classList.remove('hidden');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 3000);
+        } catch {
+          window.prompt('Copy phone number:', '+918099888851');
+        }
+      });
+    }
+
+    const form = document.querySelector<HTMLFormElement>('[data-contact-form]');
+    const status = document.querySelector<HTMLElement>('[data-contact-status]');
+    if (!form || !status) return;
+
+    const submitButton = form.querySelector<HTMLButtonElement>('button[type="submit"]');
+    const submitText = submitButton?.querySelector<HTMLElement>('[data-submit-text]');
+    const submitLabel = submitButton?.dataset.submitLabel || 'Send enquiry';
+    const statusBase = 'rounded-2xl border px-4 py-3 text-sm leading-relaxed';
+    const successClasses = `${statusBase} border-emerald-700/30 bg-emerald-50 text-emerald-950`;
+    const errorClasses = `${statusBase} border-[#9A3B2E]/30 bg-[#FBF0ED] text-[#6E2A20]`;
+
+    function setBusy(busy: boolean) {
+      if (!submitButton) return;
+      submitButton.disabled = busy;
+      if (submitText) submitText.textContent = busy ? 'Sending…' : submitLabel;
+    }
+
+    function clearErrors() {
+      form.querySelectorAll<HTMLElement>('[data-error-for]').forEach((node) => {
+        node.hidden = true;
+        node.textContent = '';
+      });
+      form.querySelectorAll<HTMLElement>('[aria-invalid]').forEach((node) => {
+        node.removeAttribute('aria-invalid');
+      });
+    }
+
+    function showErrors(errors: Record<string, string>) {
+      let firstField: HTMLElement | null = null;
+      for (const [field, message] of Object.entries(errors)) {
+        const input = form.querySelector<HTMLElement>(`[name="${field}"]`);
+        const node = form.querySelector<HTMLElement>(`[data-error-for="${field}"]`);
+        if (node) {
+          node.textContent = message;
+          node.hidden = false;
+        }
+        if (input) {
+          input.setAttribute('aria-invalid', 'true');
+          firstField ??= input;
+        }
+      }
+      firstField?.focus();
+    }
+
+    function showStatus(message: string, state: 'success' | 'error') {
+      status.textContent = message;
+      status.className = state === 'success' ? successClasses : errorClasses;
+      status.focus();
+    }
+
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      clearErrors();
+      status.className = `hidden ${statusBase}`;
+
+      if (form.checkValidity && !form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      if (form.dataset.siteEnv === 'preview') {
+        setBusy(true);
+        setTimeout(() => {
+          form.reset();
+          setBusy(false);
+          showStatus('Preview mode: message not sent', 'success');
+        }, 300);
+        return;
+      }
+
+      setBusy(true);
+
+      try {
+        const body = new URLSearchParams();
+        new FormData(form).forEach((value, field) => {
+          body.append(field, typeof value === 'string' ? value : value.name);
+        });
+
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body,
+          headers: {
+            Accept: 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          credentials: 'same-origin',
+        });
+        const data = await response.json().catch(() => null);
+
+        if (response.ok && data?.ok) {
+          form.reset();
+          showStatus(
+            data.message || 'Thank you. Your enquiry has been received; our office will respond using the contact details provided.',
+            'success'
+          );
+          return;
+        }
+
+        if (response.status === 422 && data?.errors) {
+          showErrors(data.errors);
+          showStatus(
+            data.message || 'Please check the highlighted fields and send the enquiry again.',
+            'error'
+          );
+          return;
+        }
+
+        if (response.status === 429) {
+          showStatus(
+            data?.message || 'Too many enquiries have been sent from this connection. Please wait a few minutes or call +91 8099888851.',
+            'error'
+          );
+          return;
+        }
+
+        showStatus(
+          data?.message || 'The enquiry could not be sent. Please try again, or call +91 8099888851.',
+          'error'
+        );
+      } catch {
+        showStatus('The enquiry could not be sent. Please check your connection, try again, or call +91 8099888851.', 'error');
+      } finally {
+        setBusy(false);
+      }
+    });
+  })();
+</script>

@@ -1,0 +1,155 @@
+---
+import '../styles/global.css';
+import { siteEnv } from '../lib/site-env';
+import {
+  areaServed,
+  canonicalUrl,
+  ogImageAlt,
+  ogImageHeight,
+  ogImageUrl,
+  ogImageWidth,
+  siteName,
+  telephone,
+} from '../lib/site';
+
+interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+  /** Set to null to omit the canonical link (used by the 404 page). */
+  canonical?: string | null;
+}
+
+const {
+  title = 'RIVORA | Land & Property Title Verification',
+  description = 'Advocate RK.V & Team. Specialized legal practice in title verification, due diligence, and property documentation across Telangana, Andhra Pradesh, and New Delhi.',
+  noindex = false,
+  canonical = canonicalUrl,
+} = Astro.props;
+
+const robotsContent = noindex || siteEnv !== 'production' ? 'noindex, nofollow' : 'index, follow';
+
+const structuredData = {
+  '@context': 'https://schema.org',
+  '@type': 'LegalService',
+  name: siteName,
+  telephone,
+  areaServed: [...areaServed],
+};
+---
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth no-js" data-site-env={siteEnv}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robotsContent} />
+    <meta name="theme-color" content="#151922" />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical ?? canonicalUrl} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content={String(ogImageWidth)} />
+    <meta property="og:image:height" content={String(ogImageHeight)} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
+
+    <link rel="icon" type="image/svg+xml" href="/logo/RIVORA-icon.svg" />
+    <link rel="apple-touch-icon" href="/logo/RIVORA-icon.png" />
+
+    <!-- Preload Hero Image (Capped at native 1672w) -->
+    <link
+      rel="preload"
+      as="image"
+      type="image/avif"
+      href="/images/hero-1672.avif"
+      imagesrcset="/images/hero-640.avif 640w, /images/hero-960.avif 960w, /images/hero-1280.avif 1280w, /images/hero-1672.avif 1672w"
+      imagesizes="100vw"
+      fetchpriority="high"
+    />
+
+    <!-- Self-hosted brand font -->
+    <link rel="preload" href="/fonts/dm-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData)} />
+
+    <script is:inline>
+      document.documentElement.classList.remove('no-js');
+    </script>
+  </head>
+  <body class="bg-[#FBFAF7] text-[#181c24] antialiased selection:bg-[#A98A50]/20 selection:text-[#151922] min-h-screen flex flex-col">
+    <!-- Skip to Content Accessibility Link -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[#151922] focus:text-[#EDE8DD] focus:border focus:border-[#A98A50] focus:rounded-2xl focus:shadow-sm">
+      Skip to content
+    </a>
+
+    <slot />
+
+    <!-- FLOATING WHATSAPP BUTTON (desktop only; hides at the footer) -->
+    <aside aria-label="Contact via WhatsApp" class="whatsapp-float hidden lg:block" id="whatsapp-float">
+      <a
+        href="https://wa.me/918099888851?text=Hello%20Advocate%20RK.V%2C%20I%20would%20like%20to%20consult%20regarding%20property%20title%20verification."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with Advocate RK.V & Team on WhatsApp"
+        class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-[#151922] text-[#A98A50] border-2 border-[#A98A50] rounded-full flex items-center justify-center shadow-sm hover:bg-[#262C3B] hover:text-[#EDE8DD] transition-colors focus:outline-none focus-visible:ring-4 focus-visible:ring-[#A98A50]/50"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M20 4H4a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h3v4l5-4h8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"/>
+        </svg>
+      </a>
+    </aside>
+
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        const float = document.getElementById('whatsapp-float');
+        const footer = document.querySelector('footer');
+        if (!float || !footer || !('IntersectionObserver' in window)) return;
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              float.classList.toggle('is-hidden', entry.isIntersecting);
+            });
+          },
+          { rootMargin: '0px 0px -10% 0px', threshold: 0 }
+        );
+        observer.observe(footer);
+      });
+    </script>
+
+    <!-- INTERSECTION OBSERVER REVEAL SCRIPT -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', () => {
+        const revealElements = document.querySelectorAll('.reveal-item');
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries, obs) => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-revealed');
+                obs.unobserve(entry.target);
+              }
+            });
+          }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+          revealElements.forEach(el => observer.observe(el));
+        } else {
+          revealElements.forEach(el => el.classList.add('is-revealed'));
+        }
+      });
+    </script>
+  </body>
+</html>

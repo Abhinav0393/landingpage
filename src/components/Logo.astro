@@ -1,0 +1,30 @@
+---
+/**
+ * Supplied RIVORA logo asset.
+ *
+ * The source artwork lives in `public/logo/` and is never redrawn here.
+ * `height` is the intrinsic height used to reserve layout space; visual size
+ * is controlled with the `class` attribute (e.g. `h-10 w-auto`).
+ */
+interface Props {
+  variant?: 'dark' | 'light';
+  height?: number;
+  class?: string;
+}
+
+const { variant = 'dark', height = 40, class: className = '' } = Astro.props;
+const src =
+  variant === 'light'
+    ? '/logo/RIVORA-logo-light-for-dark-backgrounds.svg'
+    : '/logo/RIVORA-logo.svg';
+const width = Math.round(((height * 448.8) / 108) * 100) / 100;
+---
+
+<img
+  src={src}
+  alt="RIVORA"
+  width={width}
+  height={height}
+  class={className}
+  decoding="async"
+/>

@@ -1,0 +1,29 @@
+---
+const highlights = [
+  'LAND INTELLIGENCE',
+  'TITLE VERIFICATION',
+  'PROPERTY DUE DILIGENCE',
+  'LEGAL RESEARCH',
+  'DOCUMENT SCRUTINY',
+  'OWNERSHIP HISTORY',
+  'LEGAL OPINIONS',
+];
+---
+
+<section aria-label="Cadastral Practice Highlights" class="marquee-container w-full bg-[#151922] py-4 lg:py-5 border-y border-[#A98A50]/20 relative overflow-hidden select-none">
+  <div class="pointer-events-none absolute inset-y-0 left-0 w-16 md:w-28 bg-gradient-to-r from-[#151922] to-transparent z-10"></div>
+  <div class="pointer-events-none absolute inset-y-0 right-0 w-16 md:w-28 bg-gradient-to-l from-[#151922] to-transparent z-10"></div>
+
+  <div class="marquee-track flex items-center">
+    {[0, 1].map((setIndex) => (
+      <div class="flex items-center shrink-0 px-6 sm:px-8" aria-hidden={setIndex === 1 ? 'true' : undefined}>
+        {highlights.map((highlight) => (
+          <>
+            <span class="font-medium text-[13px] uppercase tracking-[0.2em] text-[#f1f3ff] whitespace-nowrap">{highlight}</span>
+            <span class="text-[#A98A50] mx-6 sm:mx-8 text-sm" aria-hidden="true">✳</span>
+          </>
+        ))}
+      </div>
+    ))}
+  </div>
+</section>

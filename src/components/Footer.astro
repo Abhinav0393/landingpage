@@ -1,0 +1,51 @@
+---
+import Logo from './Logo.astro';
+---
+
+<footer class="w-full bg-[#151922] text-[#FBFAF7] py-20 lg:py-24 border-t border-[#262C3B]">
+  <div class="max-w-[1440px] mx-auto px-6 md:px-10 lg:px-16">
+    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-12 pb-12">
+      <div class="space-y-4 max-w-md">
+        <a class="inline-flex items-center group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#A98A50] rounded-2xl p-1 -ml-1" href="#hero" aria-label="RIVORA home">
+          <Logo variant="light" height={44} class="h-10 w-auto sm:h-11 group-hover:opacity-90 transition-opacity" />
+        </a>
+        <p class="text-sm text-[#A0A5B2] leading-relaxed">
+          Dedicated legal practice for deed examination, revenue record verification, and certified title opinions for property buyers and institutional acquisitions.
+        </p>
+        <div class="pt-2 space-y-1">
+          <span class="text-xs uppercase font-bold text-[#A98A50] tracking-widest block">Direct Practice Line</span>
+          <p class="text-xl font-semibold text-[#FBFAF7]">
+            <a class="hover:text-[#EDE8DD] transition-colors" href="tel:+918099888851">+91 8099888851</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-6">
+        <nav class="flex flex-wrap gap-x-8 gap-y-3" aria-label="Footer Navigation">
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#pillars">Pillars</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#services">Practice Areas</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#search-depth">Search Depth</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#process">Verification Flow</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#expertise">Counsel Practice</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#reviews">Testimonials</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#faq">FAQ</a>
+          <a class="text-[13px] font-semibold uppercase tracking-wider text-[#A0A5B2] hover:text-[#FBFAF7] transition-colors py-1" href="#contact">Contact</a>
+        </nav>
+        <div class="pt-3 border-t border-[#262C3B]">
+          <span class="text-xs uppercase font-bold text-[#A98A50] tracking-widest block mb-1">Service Jurisdictions</span>
+          <p class="text-sm text-[#EDE8DD]">Telangana &nbsp;|&nbsp; Andhra Pradesh &nbsp;|&nbsp; New Delhi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-6 border-t border-[#262C3B] flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-[#A0A5B2]">
+      <div class="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <p>© 2026 RIVORA. All rights reserved.</p>
+        <a class="hover:text-[#FBFAF7] transition-colors" href="/privacy-policy/">Privacy Policy</a>
+        <a class="hover:text-[#FBFAF7] transition-colors" href="/terms-and-conditions/">Terms &amp; Conditions</a>
+      </div>
+      <span class="text-xs uppercase tracking-[0.25em] text-[#A98A50] font-medium">Advocates &amp; Associates</span>
+    </div>
+  </div>
+</footer>
+

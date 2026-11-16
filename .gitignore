@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+rivora-handoff-generator/node_modules/
+
+# Build output
+dist/
+.astro/
+
+# Environment and local credentials
+.env
+.env.*
+!.env.example
+rivora-config/.env
+rivora-config/rate-limit/
+
+# Test and audit output
+test-results/
+playwright-report/
+blob-report/
+screenshots/
+*.log
+
+# Deployment packages
+rivora-deploy.zip
+rivora-preview.zip
+
+# OS files
+.DS_Store
+Thumbs.db

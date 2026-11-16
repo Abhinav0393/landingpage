@@ -1,0 +1,11 @@
+# Keep Vercel focused on the website. The handoff generator, QA evidence and
+# generated handoff documents are separate from the Astro build.
+rivora-handoff-generator/
+outputs/
+screenshots/
+temp_images/
+test-results/
+lighthouse-report.json
+
+# Local tool configuration
+.claude/
